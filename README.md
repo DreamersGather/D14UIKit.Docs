@@ -3,8 +3,8 @@
 [![Documentation Status](https://readthedocs.org/projects/d14uikit/badge/?version=latest)](https://d14std.io/projects/uikit/en/latest/?badge=latest)
 
 <table><tr>
-<td><img src="https://media.githubusercontent.com/media/DreamersGather/D14UIKit.Res/main/logo.png" height=41></td>
-<td><img src="https://media.githubusercontent.com/media/DreamersGather/D14Docs.Res/main/logo.png" height=41></td>
+<td><img src="https://media.githubusercontent.com/media/DreamersGather/D14UIKit.Res/main/logo.png" height="41"/></td>
+<td><img src="https://media.githubusercontent.com/media/DreamersGather/D14Docs.Res/main/logo.png" height="41"/></td>
 </tr></table>
 
 D14UIKit.Docs 是 D14UIKit 项目的开发文档。

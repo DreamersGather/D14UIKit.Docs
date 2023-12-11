@@ -1,4 +1,4 @@
-# D14UIKit 文档
+# D14UIKit Documentation
 
 [![Documentation Status](https://readthedocs.org/projects/d14uikit/badge/?version=latest)](https://d14std.io/projects/uikit/en/latest/?badge=latest)
 
@@ -7,35 +7,33 @@
 <td><img src="https://media.githubusercontent.com/media/DreamersGather/D14Docs.Res/main/logo.png" height="41"/></td>
 </tr></table>
 
-D14UIKit.Docs 是 D14UIKit 项目的开发文档。
+This repository maintains the development documentation of [D14UIKit](https://github.com/DreamersGather/D14UIKit) project.
 
-## 修改
+## Edit
 
-建议使用 VS Code 作为文本编辑器，并安装 reStructuredText 拓展来实时预览单个页面。
+We have included `.vscode` directory in the repository, and thus it is recommended to use VS Code to edit the documentation. In addition, it is convenient to preview every page with **reStructuredText** extension installed in VS Code.
 
-## 构建
+## Build
 
-在项目根目录运行如下命令以安装依赖库：
+Install dependencies (`requirements.txt` is located in the root directory of the project):
 
 ```
 > pip install sphinx
 > pip install -r requirements.txt
 ```
 
-然后运行项目根目录下的脚本来处理文档：
-
-1. 构建文档
+Generate documentation:
 
 ```
 > make html
 ```
 
-2. 打开文档：
+Open documentation (in the default browser):
 
 ```
 > make open
 ```
 
-## 附注
+## About
 
-Logo 中的“文档”两个汉字为小篆体。秦始皇在统一六国后，推行“书同文”政策，而小篆被选为全国通用的书面文字。文档作为一种特殊的资料，正有着“统一认知”的作用。
+The two Chinese characters "文档" (means documentation) in the logo are in 小篆 (a font called Small Seal Script). After unifying the six states, Emperor Qin Shi Huang implemented the policy of "书同文" (writing with the same script), and 小篆 was selected as the written script widely used throughout the country. As a special type of information, we believe that documentation is playing a role in unifying the existing knowledge of the related project.

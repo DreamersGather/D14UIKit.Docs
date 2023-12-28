@@ -1,3 +1,46 @@
 {
-    "esbonio.sphinx.confDir": "${workspaceFolder}\\source"
+    "[restructuredtext]": {
+        "editor.tabSize": 2
+    },
+    "cSpell.words": [
+        "Bkgn",
+        "Bresenham",
+        "clkp",
+        "clnt",
+        "countof",
+        "Curr",
+        "devs",
+        "elif",
+        "FUHD",
+        "fullscreen",
+        "furo",
+        "Horz",
+        "Interp",
+        "isntm",
+        "MSVC",
+        "mwnd",
+        "NDEBUG",
+        "nullopt",
+        "OLED",
+        "Photoshop",
+        "pimpl",
+        "pybind",
+        "Rebug",
+        "seealso",
+        "Skeuomorph",
+        "sourcecode",
+        "strcmp",
+        "struct",
+        "sttcm",
+        "titlesonly",
+        "toctree",
+        "uikit",
+        "vkcode",
+        "wstring",
+        "yiyaowen"
+    ],
+    "editor.wordWrap": "on",
+    "esbonio.sphinx.confDir": "${workspaceFolder}\\documents\\root",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true
 }

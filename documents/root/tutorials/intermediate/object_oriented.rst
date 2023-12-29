@@ -12,7 +12,7 @@ Object Oriented
 UI Object
 ---------
 
-``Panel`` is the most derived UI object in D14UIKit. It represents a rectangular area on the screen, where we can draw images or place other UI objects (as children). Let's start with ``MainWindow``:
+``Panel`` is the most derived UI object in D14UIKit. It represents a rectangular area on the screen, where we can draw an image or place other UI objects (as children). Let's start with ``MainWindow``:
 
 .. tabs::
 

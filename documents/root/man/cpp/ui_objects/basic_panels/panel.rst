@@ -3,37 +3,37 @@
 Panel
 =====
 
-概述
-----
+Overview
+--------
 
 .. list-table::
   :width: 100%
   :widths: 30, 70
 
-  * - 头文件
+  * - Header
     - Panel.h
-  * - 继承自
+  * - Inherits
     - NonCopyable
 
-Panel 是 D14UIKit 中最为基本的 UI 对象，它代表了屏幕上的一块矩形区域，我们可以在其中绘制图像，或者放置其它的 UI 对象（作为子对象）。
+``Panel`` is the most derived UI object in D14UIKit. It represents a rectangular area on the screen, where we can draw an image or place other UI objects (as children).
 
-构造函数
---------
+Constructors
+------------
 
 .. list-table::
   :width: 100%
 
   * - :ref:`Panel<d14uikit-reference-cpp-ui_objects-panel-ctor-1>` ()
 
-实例方法
---------
+Instance Methods
+----------------
 
 .. list-table::
   :width: 100%
   :widths: 30, 60, 10
 
   * - bool
-    - :ref:`destory<d14uikit-reference-cpp-ui_objects-panel-isntm-destory>` ()
+    - :ref:`destroy<d14uikit-reference-cpp-ui_objects-panel-isntm-destroy>` ()
     -
   * - bool
     - :ref:`visible<d14uikit-reference-cpp-ui_objects-panel-isntm-visible>` ()
@@ -126,7 +126,7 @@ Panel 是 D14UIKit 中最为基本的 UI 对象，它代表了屏幕上的一块
     - :ref:`image<d14uikit-reference-cpp-ui_objects-panel-isntm-image>` ()
     - const
   * - void
-    - :ref:`setImage<d14uikit-reference-cpp-ui_objects-panel-isntm-set_image>` (Image* imgae)
+    - :ref:`setImage<d14uikit-reference-cpp-ui_objects-panel-isntm-set_image>` (Image* image)
     -
   * - int
     - :ref:`roundRadius<d14uikit-reference-cpp-ui_objects-panel-isntm-round_radius>` ()
@@ -162,8 +162,8 @@ Panel 是 D14UIKit 中最为基本的 UI 对象，它代表了屏幕上的一块
     - :ref:`moveBelow<d14uikit-reference-cpp-ui_objects-panel-isntm-move_below>` (Panel* uiobj)
     -
 
-回调函数
---------
+Callback Functions
+------------------
 
 .. list-table::
   :width: 100%
@@ -196,64 +196,51 @@ Panel 是 D14UIKit 中最为基本的 UI 对象，它代表了屏幕上的一块
   * - virtual void
     - :ref:`onKeyboard<d14uikit-reference-cpp-ui_objects-panel-virtm-on_keyboard>` (KeyboardEvent* event)
 
-.. note::
+Remarks
+-------
 
-  每个包含新回调函数的类都持有一个访问受限的 Callback 对象，其中包含有与各回调函数同名的 functor 对象，通过设置这些 functor 对象，即可在不新建子类并重写相应虚函数的前提下实现对回调函数的重写。使用 ``callback`` 方法来引用回调对象：
+* **Appearance**
 
-  .. sourcecode:: c++
-
-    panel.callback().onUpdate = [](Panel* p)
-    {
-        // do something to update the panel
-    };
-
-  相较于原始的回调函数，每个 functor 对象还提供了事件源对象的指针作为额外的第一个参数。
-
-评述
-----
-
-* **外观**
-
-  Panel 的背景可以是纯色块：
+  The background of ``Panel`` can be a solid color:
 
   .. sourcecode:: c++
 
     panel.setColor({ 255, 0, 0 });
     panel.setOpacity(1.0f);
 
-  也可以是图像：
+  or an image:
 
   .. sourcecode:: c++
 
     Image img(L"background.png");
     panel.setImage(&img);
 
-  我们可以同时设置这两种背景，此时图像会显示在纯色背景之上，这在展示带有 Alpha 通道的图像时非常有用。除了背景之外，还可以设置边框：
+  We can set both a solid color and an image at the same time, and the image will be displayed on the solid color background, which is very useful for displaying an image with an Alpha channel. In addition to the background, we can also set the outline of ``Panel``:
 
   .. sourcecode:: c++
 
     panel.setOutlineColor({ 0, 255, 0 });
     panel.setOutlineOpacity(1.0f);
 
-  边框会显示在图像和纯色背景之上。
+  The outline will be displayed on the image and solid color background.
 
-* **层级**
+* **Priority**
 
-  Panel 可以作为全局对象：
+  ``Panel`` can be a global UI object:
 
   .. sourcecode:: c++
 
     panel.setGlobal(true);
 
-  也可以作为子对象：
+  or a child object of another ``Panel``:
 
   .. sourcecode:: c++
 
     panel.setGlobal(false);
 
-  值得注意的是全局对象并非指主窗口 MainWindow 的子对象，而是由应用程序 Application 直接管理的对象。一般来说，主窗口 MainWindow 是直接创建为全局对象的，如果你希望设计某个 UI 对象并使其响应优先级在主窗口 MainWindow 之上（例如对话框），则可以考虑将其设置为全局对象。
+  It is worth noting that global objects do not refer to the children of the main window, but rather the objects directly managed by the application. In general, the main window should be created as a global object. If you want a higher priority of a UI object than the main window (such as a dialog box), you should set it as a global object.
 
-  对于处于同一层级的对象（均为全局对象，或均为某对象的子对象），D14UIKit 还提供了优先级设置的功能，例如可以确保 a 显示在 b 之上：
+  For objects at the same layer (all are global objects or children of another object), D14UIKit also supports different priorities. For example, to make ``a`` display above ``b``:
 
   .. code-block:: c++
     :emphasize-lines: 4
@@ -263,624 +250,284 @@ Panel 是 D14UIKit 中最为基本的 UI 对象，它代表了屏幕上的一块
 
     a.moveAbove(&b);
 
-  或是直接为其指定最高优先级：
+  or simply move it to the topmost:
 
   .. sourcecode:: c++
 
     a.moveTopmost();
 
-详述
-----
+  In D14UIKit, a smaller value corresponds to a higher priority, so the topmost's priority is 0.
+
+Details
+-------
 
 .. _d14uikit-reference-cpp-ui_objects-panel-ctor-1:
 
   **Panel()**
 
-Panel 的默认构造函数。
+Constructs a panel with size of (0,0) and position of (0,0), and a black transparent background and outline, and the lowest priority.
 
-* **备注**
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-destroy:
 
-  Panel 默认具有 (0, 0) 的尺寸和 (0, 0) 的坐标（以父对象左上角为原点），背景和边框均为黑色（不透明度 = 0），并具有最低的优先级。
+  **bool destroy()**
 
-.. _d14uikit-reference-cpp-ui_objects-panel-isntm-destory:
-
-  **bool destory()**
-
-释放 UI 对象（引用计数减 1）。
-
-* **返回值**
-
-  类型：**bool**
-
-  .. list-table::
-    :width: 100%
-
-    * - true
-      - 操作成功
-    * - false
-      - 操作失败
-
-* **备注**
-
-  D14UIKit 使用引用计数管理 UI 对象，因此该方法不一定会导致析构函数被调用。该方法的典型用途是可以统一地释放任意 UI 对象，这主要是针对在不清楚该 UI 对象的层级关系（是全局对象？或是哪个对象的子对象？）的情况下仍然能够将其释放；值得注意的是，释放操作不一定会成功，这是由于某些特殊的 UI 对象（容器、视图等）会剥夺子对象的自我释放权来方便管理。
+Decreases the reference count of the panel. If the reference count becomes zero, the panel will be destroyed and the method returns true; otherwise the method returns false.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-visible:
 
   **bool visible() const**
 
-判断 UI 对象是否可见。
-
-* **返回值**
-
-  类型：**bool**
-
-  .. list-table::
-    :width: 100%
-
-    * - true
-      - 可见
-    * - false
-      - 不可见
+Returns whether the panel is visible.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_visible:
 
   **void setVisible(bool value)**
 
-设置 UI 对象是否可见。
-
-* **参数**
-
-  * ``value``
-
-    类型：**bool**
-
-    .. list-table::
-      :width: 100%
-
-      * - true
-        - 显示 UI 对象。
-      * - false
-        - 隐藏 UI 对象。
+Changes whether the panel is visible.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-enabled:
 
   **bool enabled() const**
 
-判断是否响应 UI 事件。
-
-* **返回值**
-
-  类型：**bool**
-
-  .. list-table::
-    :width: 100%
-
-    * - true
-      - 可响应
-    * - false
-      - 不可响应
+Returns whether the panel is enabled.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_enabled:
 
   **void setEnabled(bool value)**
 
-设置是否响应 UI 事件。
-
-* **参数**
-
-  * ``value``
-
-    类型：**bool**
-
-    .. list-table::
-      :width: 100%
-
-      * - true
-        - 启用对 UI 事件的响应。
-      * - false
-        - 禁用对 UI 事件的响应。
+Changes whether the panel is enabled.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-size:
 
   **Size size() const**
 
-获取矩形区域的 DIP 尺寸。
-
-* **返回值**
-
-  类型：**Size**
-
-  以 DIP 为单位的尺寸。
+Returns the size (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_size:
 
   **void setSize(const Size& value)**
 
-设置矩形区域的 DIP 尺寸。
-
-* **参数**
-
-  * ``value``
-
-    类型：**const Size&**
-
-    以 DIP 为单位的尺寸。
+Changes the size (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-width:
 
   **int width() const**
 
-获取矩形区域的 DIP 宽度。
-
-* **返回值**
-
-  类型：**int**
-
-  以 DIP 为单位的宽度。
+Returns the width (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_width:
 
   **void setWidth(int value)**
 
-设置矩形区域的 DIP 宽度。
-
-* **参数**
-
-  * ``value``
-
-    类型：**int**
-
-    以 DIP 为单位的宽度。
+Changes the width (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-height:
 
   **int height() const**
 
-获取矩形区域的 DIP 高度。
-
-* **返回值**
-
-  类型：**int**
-
-  以 DIP 为单位的高度。
+Returns the height (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_height:
 
   **void setHeight(int value)**
 
-设置矩形区域的 DIP 高度。
-
-* **参数**
-
-  * ``value``
-
-    类型：**int**
-
-    以 DIP 为单位的高度。
+Changes the height (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-position:
 
   **Point position() const**
 
-获取矩形区域的相对 DIP 坐标（以父对象左上角为原点）。
-
-* **返回值**
-
-  类型：**Point**
-
-  以 DIP 为单位的坐标。
+Returns the position (DIP) of the panel in the parent coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-abs_position:
 
   **Point absPosition() const**
 
-获取矩形区域的绝对 DIP 坐标（以根窗口左上角为原点）。
-
-* **返回值**
-
-  类型：**Point**
-
-  以 DIP 为单位的坐标。
+Returns the position (DIP) of the panel in the application coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_position:
 
   **void setPosition(const Point& value)**
 
-设置矩形区域的相对 DIP 坐标（以父对象左上角为原点）。
-
-* **参数**
-
-  * ``value``
-
-    类型：**const Point&**
-
-    以 DIP 为单位的坐标。
+Changes the position (DIP) of the panel in the parent coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-x:
 
   **int x() const**
 
-获取矩形区域的相对 DIP 水平偏移（以父对象左上角为原点）。
-
-* **返回值**
-
-  类型：**int**
-
-  以 DIP 为单位的水平偏移。
+Returns the x-offset (DIP) of the panel in the parent coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-abs_x:
 
   **int absX() const**
 
-获取矩形区域的绝对 DIP 水平偏移（以根窗口左上角为原点）。
-
-* **返回值**
-
-  类型：**int**
-
-  以 DIP 为单位的水平偏移。
+Returns the x-offset (DIP) of the panel in the application coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_x:
 
   **void setX(int value)**
 
-设置矩形区域的相对 DIP 水平偏移（以父对象左上角为原点）。
-
-* **参数**
-
-  * ``value``
-
-    类型：**int**
-
-    以 DIP 为单位的水平偏移。
+Changes the x-offset (DIP) of the panel in the parent coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-y:
 
   **int y() const**
 
-获取矩形区域的相对 DIP 垂直偏移（以父对象左上角为原点）。
-
-* **返回值**
-
-  类型：**int**
-
-  以 DIP 为单位的垂直偏移。
+Returns the y-offset (DIP) of the panel in the parent coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-abs_y:
 
   **int absY() const**
 
-获取矩形区域的绝对 DIP 垂直偏移（以根窗口左上角为原点）。
-
-* **返回值**
-
-  类型：**int**
-
-  以 DIP 为单位的垂直偏移。
+Returns the y-offset (DIP) of the panel in the application coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_y:
 
   **void setY(int value)**
 
-设置矩形区域的相对 DIP 垂直偏移（以父对象左上角为原点）。
-
-* **参数**
-
-  * ``value``
-
-    类型：**int**
-
-    以 DIP 为单位的垂直偏移。
+Changes the y-offset (DIP) of the panel in the parent coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-color:
 
   **Color color() const**
 
-获取矩形区域的背景颜色。
-
-* **返回值**
-
-  类型：**Color**
-
-  背景颜色。
+Returns the color of the solid background.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_color:
 
   **void setColor(const Color& value)**
 
-设置矩形区域的背景颜色。
-
-* **参数**
-
-  类型：**const Color&**
-
-  背景颜色。
+Changes the color of the solid background.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-opacity:
 
   **float opacity() const**
 
-获取矩形区域的背景不透明度。
-
-* **返回值**
-
-  类型：**float**
-
-  背景不透明度。
+Returns the opacity of the solid background.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_opacity:
 
   **void setOpacity(float value)**
 
-设置矩形区域的背景不透明度。
-
-* **参数**
-
-  * ``value``
-
-    类型：**float**
-
-    背景不透明度。
+Changes the opacity of the solid background.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-outline_width:
 
   **int outlineWidth() const**
 
-获取矩形区域的边框 DIP 宽度。
-
-* **返回值**
-
-  类型：**int**
-
-  以 DIP 为单位的宽度。
+Returns the width (DIP) of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_outline_width:
 
   **void setOutlineWidth(int value)**
 
-设置矩形区域的边框 DIP 宽度。
-
-* **参数**
-
-  * ``value``
-
-    类型：**int**
-
-    以 DIP 为单位的宽度。
+Changes the width (DIP) of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-outline_color:
 
   **Color outlineColor() const**
 
-获取矩形区域的边框颜色。
-
-* **返回值**
-
-  类型：**Color**
-
-  边框颜色。
+Returns the color of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_outline_color:
 
   **void setOutlineColor(const Color& value)**
 
-设置矩形区域的边框颜色。
-
-* **参数**
-
-  类型：**const Color&**
-
-  边框颜色。
+Changes the color of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-outline_opacity:
 
   **float outlineOpacity() const**
 
-获取矩形区域的边框不透明度。
-
-* **返回值**
-
-  类型：**float**
-
-  边框不透明度。
+Returns the opacity of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_outline_opacity:
 
   **void setOutlineOpacity(float value)**
 
-设置矩形区域的边框不透明度。
-
-* **参数**
-
-  * ``value``
-
-    类型：**float**
-
-    边框不透明度。
+Changes the opacity of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-image:
 
   **Image* image() const**
 
-获取矩形区域的背景图像。
-
-* **返回值**
-
-  类型：**Image***
-
-  背景图像的指针，无背景图像时为空值。
+Returns the image of the background, or ``nullptr`` if not set.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_image:
 
-  **void setImage(Image* imgae)**
+  **void setImage(Image* image)**
 
-设置矩形区域的背景图像。
-
-* **参数**
-
-  * ``image``
-
-    类型：**Image***
-
-    背景图像的指针，传入空值来移除背景图像。
+Changes the image of the background; pass ``nullptr`` to reset.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-round_radius:
 
   **int roundRadius() const**
 
-获取矩形区域的 DIP 圆角半径。
-
-* **返回值**
-
-  类型：**int**
-
-  以 DIP 为单位的半径。
+Returns the round radius (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_round_radius:
 
   **void setRoundRadius(int value)**
 
-设置矩形区域的 DIP 圆角半径。
-
-* **参数**
-
-  * ``value``
-
-    类型：**int**
-
-    以 DIP 为单位的半径。
+Changes the round radius (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_global:
 
   **void setGlobal(bool value)**
 
-设置 UI 对象的层级。
-
-* **参数**
-
-  * ``value``
-
-    类型：**bool**
-
-    .. list-table::
-      :width: 100%
-
-      * - true
-        - 作为全局对象（由 Application 管理）。
-      * - false
-        - 作为其它对象的子对象（需要进一步设置）。
+Changes whether the panel is a global UI object.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_focused:
 
   **void setFocused(bool value)**
 
-设置 UI 对象是否可以获得焦点。
+Changes whether the panel can be focused.
 
-* **参数**
+* **Notes**
 
-  * ``value``
-
-    类型：**bool**
-
-    .. list-table::
-      :width: 100%
-
-      * - true
-        - 可以获得焦点。
-      * - false
-        - 不可以获得焦点。
-
-* **备注**
-
-  只有当 UI 对象可以获得焦点时才会触发 onGetFocus 和 onLoseFocus 回调函数。
+  It is only when the UI object can be focused that its ``onGetFocus`` and ``onLoseFocus`` callback functions are possible to be triggered.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-parent:
 
   **Panel* parent() const**
 
-获取父 UI 对象。
-
-* **返回值**
-
-  类型：**Panel***
-
-  父 UI 对象的指针，无父对象时为空值。
+Returns the parent of the panel, or ``nullptr`` if not set.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_parent:
 
   **void setParent(Panel* uiobj)**
 
-设置父 UI 对象。
-
-* **参数**
-
-  * ``uiobj``
-
-    类型：**Panel***
-
-    父 UI 对象的指针，传入空值来取消与父对象的绑定。
+Changes the parent of the panel; pass ``nullptr`` to reset.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-add_child:
 
   **void addChild(Panel* uiobj)**
 
-添加子 UI 对象。
-
-* **参数**
-
-  * ``uiobj``
-
-    类型：**Panel***
-
-    待添加的子 UI 对象的指针。
+Adds ``uiobj`` to the child-set of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-remove_child:
 
   **void removeChild(Panel* uiobj)**
 
-移除子 UI 对象。
-
-* **参数**
-
-  * ``uiobj``
-
-    类型：**Panel***
-
-    待移除的子 UI 对象的指针。
+Removes ``uiobj`` from the child-set of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-move_topmost:
 
   **void moveTopmost()**
 
-将 UI 对象置于最顶层（给予最高优先级）。
+Moves the panel to the topmost (i.e. gives the highest priority).
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-move_above:
 
   **void moveAbove(Panel* uiobj)**
 
-将 UI 对象置于其它对象之上（给予更高的优先级）。
-
-* **参数**
-
-  * ``uiobj``
-
-    类型：**Panel***
-
-    具有较低优先级的 UI 对象。
+Moves the panel above ``uiobj`` (i.e. set its priority to ``uiobj``'s - 1).
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-move_below:
 
   **void moveBelow(Panel* uiobj)**
 
-将 UI 对象置于其它对象之下（给予更低的优先级）。
-
-* **参数**
-
-  * ``uiobj``
-
-    类型：**Panel***
-
-    具有较高优先级的 UI 对象。
+Moves the panel below ``uiobj`` (i.e. set its priority to  ``uiobj``'s + 1).
 
 .. _d14uikit-reference-cpp-ui_objects-panel-virtm-on_update:
 
@@ -890,15 +537,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 每帧的更新阶段
-  * - functor 对象
+  * - trigger
+    - when processing the update stage in each frame
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*)> onUpdate = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -908,7 +555,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -925,15 +572,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 矩形区域的尺寸改变
-  * - functor 对象
+  * - trigger
+    - when the size of the panel changes
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, SizeEvent*)> onSize = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -943,7 +590,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -960,15 +607,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 矩形区域的坐标改变
-  * - functor 对象
+  * - trigger
+    - when the position of the panel changes
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, MoveEvent*)> onMove = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -978,7 +625,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -995,15 +642,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 应用程序的主题改变
-  * - functor 对象
+  * - trigger
+    - when the theme of the application changes
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, const std::wstring&)> onChangeTheme = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1013,7 +660,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1030,15 +677,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 应用程序的语言与区域改变
-  * - functor 对象
+  * - trigger
+    - when the language-locale of the application changes
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, const std::wstring&)> onChangeLangLocale = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1048,7 +695,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1065,15 +712,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - UI 对象获得焦点
-  * - functor 对象
+  * - trigger
+    - when the panel gets focus
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*)> onGetFocus = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1083,7 +730,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1100,15 +747,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - UI 对象失去焦点
-  * - functor 对象
+  * - trigger
+    - when the panel loses focus
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*)> onLoseFocus = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1118,7 +765,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1135,15 +782,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 鼠标指针进入矩形区域
-  * - functor 对象
+  * - trigger
+    - when the mouse cursor enters the panel
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, MouseMoveEvent*)> onMouseEnter = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1153,7 +800,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1170,15 +817,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 鼠标指针在矩形区域内移动
-  * - functor 对象
+  * - trigger
+    - when the mouse cursor moves in the panel
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, MouseMoveEvent*)> onMouseMove = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1188,7 +835,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1205,15 +852,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 鼠标指针离开矩形区域
-  * - functor 对象
+  * - trigger
+    - when the mouse cursor leaves the panel
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, MouseMoveEvent*)> onMouseLeave = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1223,7 +870,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1240,15 +887,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 鼠标指针在矩形区域内，并使用按钮
-  * - functor 对象
+  * - trigger
+    - when any mouse button is used in the panel
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, MouseButtonEvent*)> onMouseButton = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1258,7 +905,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1275,15 +922,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 鼠标指针在矩形区域内，并使用滚轮
-  * - functor 对象
+  * - trigger
+    - when the mouse wheel is used in the panel
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, MouseWheelEvent*)> onMouseWheel = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1293,7 +940,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 
@@ -1310,15 +957,15 @@ Panel 的默认构造函数。
   :width: 100%
   :stub-columns: 1
 
-  * - 触发条件
-    - 鼠标指针在矩形区域内（或 UI 对象获得焦点），并使用键盘
-  * - functor 对象
+  * - trigger
+    - when the keyboard is used in the panel
+  * - functor
     - .. sourcecode:: c++
 
         std::function<void(Panel*, KeyboardEvent*)> onKeyboard = {};
 
-  * - lambda 模板
-    - 通用写法:
+  * - lambda templates
+    - general:
 
       .. sourcecode:: c++
 
@@ -1328,7 +975,7 @@ Panel 的默认构造函数。
             // add code here
         };
 
-      需要 Callback.h:
+      with Callback.h:
 
       .. sourcecode:: c++
 

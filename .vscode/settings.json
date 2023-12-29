@@ -21,6 +21,7 @@
         "mwnd",
         "NDEBUG",
         "nullopt",
+        "nullptr",
         "OLED",
         "Photoshop",
         "pimpl",
@@ -35,6 +36,8 @@
         "titlesonly",
         "toctree",
         "uikit",
+        "uiobj",
+        "virtm",
         "vkcode",
         "wstring",
         "yiyaowen"

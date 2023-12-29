@@ -17,16 +17,16 @@ Overview
 
 ``Application`` is the core class for creating a typical D14UIKit application.
 
-Constructor
------------
+Constructors
+------------
 
 .. list-table::
   :width: 100%
 
   * - :ref:`Application<d14uikit-reference-cpp-application-ctor-1>` (const std::wstring& name = L"D14UIKit", const std::optional<float>& dpi = std::nullopt)
 
-Static Method
--------------
+Static Methods
+--------------
 
 .. list-table::
   :width: 100%
@@ -35,8 +35,8 @@ Static Method
   * - Application*
     - :ref:`app<d14uikit-reference-cpp-application-sttcm-app>` ()
 
-Instance Method
----------------
+Instance Methods
+----------------
 
 .. list-table::
   :width: 100%
@@ -413,37 +413,37 @@ Changes the height (DIP) of the main window.
 
   **Point position() const**
 
-Returns the position (DIP) of the main window in the screen coordinate [1]_.
+Returns the position (DIP) of the main window in the screen coordinate.
 
 .. _d14uikit-reference-cpp-application-isntm-set_position:
 
   **void setPosition(const Point& value)**
 
-Changes the position (DIP) of the main window in the screen coordinate [1]_.
+Changes the position (DIP) of the main window in the screen coordinate.
 
 .. _d14uikit-reference-cpp-application-isntm-x:
 
   **int x() const**
 
-Returns the x-offset (DIP) of the main window in the screen coordinate [1]_.
+Returns the x-offset (DIP) of the main window in the screen coordinate.
 
 .. _d14uikit-reference-cpp-application-isntm-set_x:
 
   **void setX(int value)**
 
-Changes the x-offset (DIP) of the main window in the screen coordinate [1]_.
+Changes the x-offset (DIP) of the main window in the screen coordinate.
 
 .. _d14uikit-reference-cpp-application-isntm-y:
 
   **int y() const**
 
-Returns the y-offset (DIP) of the main window in the screen coordinate [1]_.
+Returns the y-offset (DIP) of the main window in the screen coordinate.
 
 .. _d14uikit-reference-cpp-application-isntm-set_y:
 
   **void setY(int value)**
 
-Changes the y-offset (DIP) of the main window in the screen coordinate [1]_.
+Changes the y-offset (DIP) of the main window in the screen coordinate.
 
 .. _d14uikit-reference-cpp-application-isntm-min_size:
 
@@ -662,5 +662,3 @@ Returns the last frame presented by the renderer.
 
         frame->save(L"Screenshot.png");
     };
-
-.. [1] In the screen coordinate, the origin is at the left-top corner of the screen, with the x-axis from left to right and the y-axis from top to bottom.

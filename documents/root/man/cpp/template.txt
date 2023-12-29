@@ -12,16 +12,16 @@ Overview
 
 XXXX
 
-Constructor
------------
+Constructors
+------------
 
 .. list-table::
   :width: 100%
 
 XXXX
 
-Static Method
--------------
+Static Methods
+--------------
 
 .. list-table::
   :width: 100%
@@ -29,8 +29,8 @@ Static Method
 
 XXXX
 
-Instance Method
----------------
+Instance Methods
+----------------
 
 .. list-table::
   :width: 100%

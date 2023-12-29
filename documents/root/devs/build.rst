@@ -34,7 +34,7 @@ Download the project repository from `GitHub`_ (optional ``--depth=1`` for reduc
 
    > git clone https://github.com/DreamersGather/D14UIKit.git --depth=1
 
-We use `Git Large File Storage`_ system to help manage the binaries (like png files) in the project, and you may need to run an extra command ``git lfs fetch`` to download the lfs files. If you encounter any problems while downloading the lfs file, simply use the search box or propose an issue to `D14UIKit <https://github.com/DreamersGather/D14UIKit/issues>`__.
+We use `Git Large File Storage`_ system to help manage the binaries (like png files) in the project, and you may need to run an extra command ``git lfs fetch`` to download the lfs files. If you encounter any problems while downloading the lfs files, simply use the search box or propose an issue to `D14UIKit <https://github.com/DreamersGather/D14UIKit/issues>`__.
 
 .. _GitHub: https://github.com/yiyaowen/D14UIKit
 .. _Git Large File Storage: https://git-lfs.com

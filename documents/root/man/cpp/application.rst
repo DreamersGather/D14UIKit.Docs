@@ -138,12 +138,6 @@ Instance Methods
   * - int
     - :ref:`fps<d14uikit-reference-cpp-application-isntm-fps>` ()
     - const
-  * - bool
-    - :ref:`lowEnergy<d14uikit-reference-cpp-application-isntm-low_energy>` ()
-    - const
-  * - void
-    - :ref:`setLowEnergy<d14uikit-reference-cpp-application-isntm-set_low_energy>` (bool value)
-    -
   * - const std::wstring&
     - :ref:`themeMode<d14uikit-reference-cpp-application-isntm-theme_mode>` ()
     - const
@@ -510,22 +504,6 @@ Changes whether the application is displayed in fullscreen mode.
   **int fps() const**
 
 Returns the refresh rate of the application.
-
-.. _d14uikit-reference-cpp-application-isntm-low_energy:
-
-  **bool lowEnergy() const**
-
-Returns whether the application is working in low-energy mode.
-
-* **Notes**
-
-  For the application working in low-energy mode, the renderer outputs a new frame only when the user or the program itself triggers any UI event that causes the main window to repaint. When the application is idle in the background, it helps to reduce the CPU usage and saves power energy.
-
-.. _d14uikit-reference-cpp-application-isntm-set_low_energy:
-
-  **void setLowEnergy(bool value)**
-
-Changes whether the application is working in low-energy mode.
 
 .. _d14uikit-reference-cpp-application-isntm-theme_mode:
 

@@ -52,7 +52,7 @@ Imagine a common task that we want to add GUI support for an existing command-li
 
    Due to various limitations, many GUI libraries have complex configuration steps. Take cross-platform development as an example, a GUI library may have to introduce many configuration parameters to provide a unified development process.
 
-3. **Old and Outdated UI appearances**:
+3. **Old and Outdated UI Appearances**:
 
    Started from XP version, several update iterations have been done on the appearance of Windows, and it is a normal phenomenon under the trend of constantly evolving of the visual styles in the UI design industry. For example, Realistic style was introduced from Vista version, and reached its peak in Windows 7; however, Windows 8 turned to Flat style and Windows 10 further improved it. The latest Windows 11 fully adapts Fluent Design style, which aims to provide a more modern user experience. For the GUI libraries on Windows, some are from official development teams, and is keeping updated with system upgrades; most of others either have their own appearance styles, or still stuck in the past instead of following the industry trend.
 

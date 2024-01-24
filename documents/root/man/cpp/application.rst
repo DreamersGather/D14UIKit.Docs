@@ -367,6 +367,8 @@ Changes whether the main window is maximized.
     * - Normal, Minimized
       - The main window will keep the original state.
 
+  Besides, the "main window" mentioned here is actually the Win32 window instead of the ``MainWindow`` in D14UIKit, so this method simply maximize the visible area of the application but will NOT adjust the appearance of the ``MainWindow`` instance created by the user. To maximize the window normally (without borders), please use ``MainWindow::showMaximized``.
+
 .. _d14uikit-reference-cpp-application-isntm-size:
 
   **Size size() const**

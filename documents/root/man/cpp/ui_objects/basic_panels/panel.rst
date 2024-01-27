@@ -92,6 +92,42 @@ Instance Methods
   * - void
     - :ref:`setY<d14uikit-reference-cpp-ui_objects-panel-isntm-set_y>` (int value)
     -
+  * - Size
+    - :ref:`minSize<d14uikit-reference-cpp-ui_objects-panel-isntm-min_size>` ()
+    - const
+  * - void
+    - :ref:`setMinSize<d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_size>` (const Size& value)
+    -
+  * - int
+    - :ref:`minWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-min_width>` ()
+    - const
+  * - void
+    - :ref:`setMinWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_width>` (int value)
+    -
+  * - int
+    - :ref:`minHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-min_height>` ()
+    - const
+  * - void
+    - :ref:`setMinHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_height>` (int value)
+    -
+  * - Size
+    - :ref:`maxSize<d14uikit-reference-cpp-ui_objects-panel-isntm-max_size>` ()
+    - const
+  * - void
+    - :ref:`setMaxSize<d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_size>` (const Size& value)
+    -
+  * - int
+    - :ref:`maxWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-max_width>` ()
+    - const
+  * - void
+    - :ref:`setMaxWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_width>` (int value)
+    -
+  * - int
+    - :ref:`maxHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-max_height>` ()
+    - const
+  * - void
+    - :ref:`setMaxHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_height>` (int value)
+    -
   * - Color
     - :ref:`color<d14uikit-reference-cpp-ui_objects-panel-isntm-color>` ()
     - const
@@ -386,6 +422,78 @@ Returns the y-offset (DIP) of the panel in the application coordinate.
   **void setY(int value)**
 
 Changes the y-offset (DIP) of the panel in the parent coordinate.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-min_size:
+
+  **Size minSize() const**
+
+Returns the minimal size (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_size:
+
+  **void setMinSize(const Size& value)**
+
+Changes the minimal size (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-min_width:
+
+  **int minWidth() const**
+
+Returns the minimal width (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_width:
+
+  **void setMinWidth(int value)**
+
+Changes the minimal width (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-min_height:
+
+  **int minHeight() const**
+
+Returns the minimal height (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_height:
+
+  **void setMinHeight(int value)**
+
+Changes the minimal height (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-max_size:
+
+  **Size maxSize() const**
+
+Returns the maximal size (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_size:
+
+  **void setMaxSize(const Size& value)**
+
+Changes the maximal size (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-max_width:
+
+  **int maxWidth() const**
+
+Returns the maximal width (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_width:
+
+  **void setMaxWidth(int value)**
+
+Changes the maximal width (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-max_height:
+
+  **int maxHeight() const**
+
+Returns the maximal height (DIP) of the panel.
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_height:
+
+  **void setMaxHeight(int value)**
+
+Changes the maximal height (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-color:
 

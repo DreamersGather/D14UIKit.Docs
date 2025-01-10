@@ -40,6 +40,7 @@ The directory structure is as follows:
 
       * **demo**
       * **D14UIKit.pyd** (Python DLL)
+      * **D14UIKit.pyi** (Python Stub File)
 
     .. note::
 

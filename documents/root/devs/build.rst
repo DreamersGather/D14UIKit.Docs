@@ -228,6 +228,7 @@ Run ``pack.ps1 v1_0`` in Windows PowerShell to generate/update **Out**, where th
 
     * **demo**
     * **D14UIKit.pyd** (Python DLL)
+    * **D14UIKit.pyi** (Python Stub File)
 
   * **d14uikit_cpp_v1_0.zip** (zip of **cpp**)
   * **d14uikit_python_v1_0.zip** (zip of **python**)

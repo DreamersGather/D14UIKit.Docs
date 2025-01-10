@@ -33,7 +33,7 @@ Instance Methods
   :widths: 30, 60, 10
 
   * - bool
-    - :ref:`destroy<d14uikit-reference-cpp-ui_objects-panel-isntm-destroy>` ()
+    - :ref:`release<d14uikit-reference-cpp-ui_objects-panel-isntm-release>` ()
     -
   * - bool
     - :ref:`visible<d14uikit-reference-cpp-ui_objects-panel-isntm-visible>` ()
@@ -158,11 +158,29 @@ Instance Methods
   * - void
     - :ref:`setOutlineOpacity<d14uikit-reference-cpp-ui_objects-panel-isntm-set_outline_opacity>` (float value)
     -
+  * - bool
+    - :ref:`animState<d14uikit-reference-cpp-ui_objects-panel-isntm-anim_state>` ()
+    - const
+  * - void
+    - :ref:`setAnimState<d14uikit-reference-cpp-ui_objects-panel-isntm-set_anim_state>` (bool value)
+    -
   * - Image*
     - :ref:`image<d14uikit-reference-cpp-ui_objects-panel-isntm-image>` ()
     - const
   * - void
     - :ref:`setImage<d14uikit-reference-cpp-ui_objects-panel-isntm-set_image>` (Image* image)
+    -
+  * - float
+    - :ref:`bitmapOpacity<d14uikit-reference-cpp-ui_objects-panel-isntm-bitmap_opacity>` ()
+    - const
+  * - void
+    - :ref:`setBitmapOpacity<d14uikit-reference-cpp-ui_objects-panel-isntm-set_bitmap_opacity>` (float value)
+    -
+  * - BitmapInterpMode
+    - :ref:`bitmapInterpMode<d14uikit-reference-cpp-ui_objects-panel-isntm-bitmap_interp_mode>` ()
+    - const
+  * - void
+    - :ref:`setBitmapInterpMode<d14uikit-reference-cpp-ui_objects-panel-isntm-set_bitmap_interp_mode>` (BitmapInterpMode mode)
     -
   * - int
     - :ref:`roundRadius<d14uikit-reference-cpp-ui_objects-panel-isntm-round_radius>` ()
@@ -172,6 +190,9 @@ Instance Methods
     -
   * - void
     - :ref:`setGlobal<d14uikit-reference-cpp-ui_objects-panel-isntm-set_global>` (bool value)
+    -
+  * - void
+    - :ref:`setPinned<d14uikit-reference-cpp-ui_objects-panel-isntm-set_pinned>` (bool value)
     -
   * - void
     - :ref:`setFocused<d14uikit-reference-cpp-ui_objects-panel-isntm-set_focused>` (bool value)
@@ -187,6 +208,12 @@ Instance Methods
     -
   * - void
     - :ref:`removeChild<d14uikit-reference-cpp-ui_objects-panel-isntm-remove_child>` (Panel* uiobj)
+    -
+  * - void
+    - :ref:`pinChild<d14uikit-reference-cpp-ui_objects-panel-isntm-pin_child>` (Panel* uiobj)
+    -
+  * - void
+    - :ref:`unpinChild<d14uikit-reference-cpp-ui_objects-panel-isntm-unpin_child>` (Panel* uiobj)
     -
   * - void
     - :ref:`moveTopmost<d14uikit-reference-cpp-ui_objects-panel-isntm-move_topmost>` ()
@@ -303,339 +330,261 @@ Details
 
 Constructs a panel with size of (0,0) and position of (0,0), and a black transparent background and outline, and the lowest priority.
 
-.. _d14uikit-reference-cpp-ui_objects-panel-isntm-destroy:
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-release:
 
-  **bool destroy()**
-
-Decreases the reference count of the panel. If the reference count becomes zero, the panel will be destroyed and the method returns true; otherwise the method returns false.
+  **bool release()**
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-visible:
 
   **bool visible() const**
 
-Returns whether the panel is visible.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_visible:
 
   **void setVisible(bool value)**
-
-Changes whether the panel is visible.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-enabled:
 
   **bool enabled() const**
 
-Returns whether the panel is enabled.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_enabled:
 
   **void setEnabled(bool value)**
-
-Changes whether the panel is enabled.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-size:
 
   **Size size() const**
 
-Returns the size (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_size:
 
   **void setSize(const Size& value)**
-
-Changes the size (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-width:
 
   **int width() const**
 
-Returns the width (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_width:
 
   **void setWidth(int value)**
-
-Changes the width (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-height:
 
   **int height() const**
 
-Returns the height (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_height:
 
   **void setHeight(int value)**
-
-Changes the height (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-position:
 
   **Point position() const**
 
-Returns the position (DIP) of the panel in the parent coordinate.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-abs_position:
 
   **Point absPosition() const**
-
-Returns the position (DIP) of the panel in the application coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_position:
 
   **void setPosition(const Point& value)**
 
-Changes the position (DIP) of the panel in the parent coordinate.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-x:
 
   **int x() const**
-
-Returns the x-offset (DIP) of the panel in the parent coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-abs_x:
 
   **int absX() const**
 
-Returns the x-offset (DIP) of the panel in the application coordinate.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_x:
 
   **void setX(int value)**
-
-Changes the x-offset (DIP) of the panel in the parent coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-y:
 
   **int y() const**
 
-Returns the y-offset (DIP) of the panel in the parent coordinate.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-abs_y:
 
   **int absY() const**
-
-Returns the y-offset (DIP) of the panel in the application coordinate.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_y:
 
   **void setY(int value)**
 
-Changes the y-offset (DIP) of the panel in the parent coordinate.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-min_size:
 
   **Size minSize() const**
-
-Returns the minimal size (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_size:
 
   **void setMinSize(const Size& value)**
 
-Changes the minimal size (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-min_width:
 
   **int minWidth() const**
-
-Returns the minimal width (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_width:
 
   **void setMinWidth(int value)**
 
-Changes the minimal width (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-min_height:
 
   **int minHeight() const**
-
-Returns the minimal height (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_min_height:
 
   **void setMinHeight(int value)**
 
-Changes the minimal height (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-max_size:
 
   **Size maxSize() const**
-
-Returns the maximal size (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_size:
 
   **void setMaxSize(const Size& value)**
 
-Changes the maximal size (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-max_width:
 
   **int maxWidth() const**
-
-Returns the maximal width (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_width:
 
   **void setMaxWidth(int value)**
 
-Changes the maximal width (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-max_height:
 
   **int maxHeight() const**
-
-Returns the maximal height (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_max_height:
 
   **void setMaxHeight(int value)**
 
-Changes the maximal height (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-color:
 
   **Color color() const**
-
-Returns the color of the solid background.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_color:
 
   **void setColor(const Color& value)**
 
-Changes the color of the solid background.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-opacity:
 
   **float opacity() const**
-
-Returns the opacity of the solid background.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_opacity:
 
   **void setOpacity(float value)**
 
-Changes the opacity of the solid background.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-outline_width:
 
   **int outlineWidth() const**
-
-Returns the width (DIP) of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_outline_width:
 
   **void setOutlineWidth(int value)**
 
-Changes the width (DIP) of the outline.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-outline_color:
 
   **Color outlineColor() const**
-
-Returns the color of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_outline_color:
 
   **void setOutlineColor(const Color& value)**
 
-Changes the color of the outline.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-outline_opacity:
 
   **float outlineOpacity() const**
-
-Returns the opacity of the outline.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_outline_opacity:
 
   **void setOutlineOpacity(float value)**
 
-Changes the opacity of the outline.
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-anim_state:
+
+  **bool animState() const**
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_anim_state:
+
+  **void setAnimState(bool value)**
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-image:
 
   **Image* image() const**
 
-Returns the image of the background, or ``nullptr`` if not set.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_image:
 
   **void setImage(Image* image)**
 
-Changes the image of the background; pass ``nullptr`` to reset.
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-bitmap_opacity:
+
+  **float bitmapOpacity() const**
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_bitmap_opacity:
+
+  **void setBitmapOpacity(float value)**
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-bitmap_interp_mode:
+
+  **BitmapInterpMode bitmapInterpMode() const**
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_bitmap_interp_mode:
+
+  **void setBitmapInterpMode(BitmapInterpMode mode)**
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-round_radius:
 
   **int roundRadius() const**
 
-Returns the round radius (DIP) of the panel.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_round_radius:
 
   **void setRoundRadius(int value)**
-
-Changes the round radius (DIP) of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_global:
 
   **void setGlobal(bool value)**
 
-Changes whether the panel is a global UI object.
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_pinned:
+
+  **void setPinned(bool value)**
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_focused:
 
   **void setFocused(bool value)**
 
-Changes whether the panel can be focused.
-
-* **Notes**
-
-  It is only when the UI object can be focused that its ``onGetFocus`` and ``onLoseFocus`` callback functions are possible to be triggered.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-parent:
 
   **Panel* parent() const**
-
-Returns the parent of the panel, or ``nullptr`` if not set.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-set_parent:
 
   **void setParent(Panel* uiobj)**
 
-Changes the parent of the panel; pass ``nullptr`` to reset.
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-add_child:
 
   **void addChild(Panel* uiobj)**
-
-Adds ``uiobj`` to the child-set of the panel.
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-remove_child:
 
   **void removeChild(Panel* uiobj)**
 
-Removes ``uiobj`` from the child-set of the panel.
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-pin_child:
+
+  **void pinChild(Panel* uiobj)**
+
+.. _d14uikit-reference-cpp-ui_objects-panel-isntm-unpin_child:
+
+  **void unpinChild(Panel* uiobj)**
 
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-move_topmost:
 
   **void moveTopmost()**
 
-Moves the panel to the topmost (i.e. gives the highest priority).
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-move_above:
 
   **void moveAbove(Panel* uiobj)**
 
-Moves the panel above ``uiobj`` (i.e. set its priority to ``uiobj``'s - 1).
-
 .. _d14uikit-reference-cpp-ui_objects-panel-isntm-move_below:
 
   **void moveBelow(Panel* uiobj)**
-
-Moves the panel below ``uiobj`` (i.e. set its priority to  ``uiobj``'s + 1).
 
 .. _d14uikit-reference-cpp-ui_objects-panel-virtm-on_update:
 

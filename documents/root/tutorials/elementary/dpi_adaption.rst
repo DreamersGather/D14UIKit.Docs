@@ -9,6 +9,8 @@ DPI Adaption
 
   The source code of the demo can be found in **d14uikit/demo**.
 
+.. _d14uikit-tutorials-elementary-dpi_adaption-display_scale:
+
 Display Scale
 -------------
 
@@ -16,7 +18,7 @@ Windows 10/11 users may be familiar with the following option:
 
 .. image:: https://media.githubusercontent.com/media/DreamersGather/D14Docs.Res/main/d14uikit/tutorials/display_scaling.png
 
-For Windows 7 and older versions, the option can be found in control panel (high-DPI scaling is supported starting from Windows XP). In general, 100% scaling is displayed in 96 dpi (120 dpi for 125% scaling and so on). In terms of GUI appearance, as the scaling ratio increases, the size of a UI control will increase, and bitmap images may become blurry (while vector images keep sharp).
+For Windows 7 and older versions, the option can be found in control panel (high-DPI scaling is supported starting from Windows XP). In general, 100% scaling is displayed in 96 dpi (192 dpi for 200% scaling and so on). In terms of GUI appearance, as the scaling ratio increases, the size of a UI control will increase, and bitmap images may become blurry (while vector images keep sharp).
 
 DPI: Dots Per Inch
 ------------------
@@ -25,7 +27,7 @@ DPI stands for "Dots Per Inch". As we all known, "Inch" is a physical unit of le
 
 In fact, DPI is often used to describe the sensitivity of electronic devices. For example, considering a 1000 dpi mouse, its cursor moves 1000 pixels on screen every time the related device moves 1 inch on physical plane. In addition, on Windows platform, there is a concept called Device Independent Pixel (DIP), which is easily confused with Dots Per Inch (DPI). DIP is a pixel unit in logical space, and it is often mapped to multiple pixels in physical space. Applying DIP coordinates provides great convenience for GUI development, as Windows automatically converts logical pixels into physical pixels according to different DPI settings, which ensures the object can be displayed correctly on screens of different sizes and resolutions.
 
-For example, a 100 dip line would occupy 100 physical pixels on a 96 dpi screen, while on a 120 dpi screen it would occupy 100*(120/96)=125 physical pixels. More details can be found in this `article`_ on MSDN, where the content of Direct2D and hig-DPI is also helpful for development.
+For example, a 100 dip line would occupy 100 physical pixels on a 96 dpi screen, while on a 192 dpi screen it would occupy 100*(192/96)=200 physical pixels. More details can be found in this `article`_ on MSDN, where the content of Direct2D and hig-DPI is also helpful for development.
 
 .. _article: https://learn.microsoft.com/en-us/windows/win32/direct2d/direct2d-and-high-dpi#what-is-a-dip
 
@@ -79,3 +81,9 @@ Setting the DPI of an application in D14UIKit is very straightforward:
           app = Application(DEMO_NAME, dpi)
           mwnd = MainWindow(DEMO_NAME)
           exit(app.run())
+
+If the DPI parameter is not specified, it will query the scaling setting set by the Windows operating system for the current process during creation and automatically apply it.
+
+.. note::
+
+   Note that the Windows operating system has a global scaling setting (as shown in :ref:`d14uikit-tutorials-elementary-dpi_adaption-display_scale` above). Additionally, there are individual scaling settings for each application (right-click on the exe → Properties → Compatibility → Change high DPI settings). Therefore, if you want the application to be DPI-aware, do not specify this parameter. Alternatively, you can query the DPI through other system APIs (such as Win32 or certain Python packages) and manually manage the relevant data, allowing users to choose the actual DPI to use.

@@ -7,6 +7,7 @@ Miscellaneous
    :titlesonly:
 
    cursor
+   frame_anim_panel
    check_box
    on_off_switch
    popup_menu

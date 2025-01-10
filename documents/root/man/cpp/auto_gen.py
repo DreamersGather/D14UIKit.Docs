@@ -46,7 +46,7 @@ void setEnabled(bool value);'''
     uicodSrcBox.textRect = Rect(5, 5, 345, 479)
 
     uicodGenBtn = FilledButton('生成')
-    uicodGenBtn.fontFamilyName = '默认'
+    uicodGenBtn.content.label.fontFamilyName = '默认'
 
     uicodGenBtn.parent = clntArea
     uicodGenBtn.size = Size(60, 64)
@@ -91,6 +91,7 @@ void setEnabled(bool value);'''
             root = camel2underl(uicodRotBox.text)
             lines = uicodSrcBox.text.splitlines()
             lines = [l.strip() for l in lines if l != '']
+            lines = [l.strip() for l in lines if not l.startswith('//')]
             instm = list()
             ddesc = list()
             for l in lines:
@@ -113,6 +114,7 @@ void setEnabled(bool value);'''
                             ':\n\n  **' + l + '**')
             instmDstBox.text = '\n'.join(instm)
             ddescDstBox.text = '\n\n'.join(ddesc)
+
     uicodGenBtn.f_onMouseButtonRelease = autoGen
 
     exit(app.run())

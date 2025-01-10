@@ -145,7 +145,7 @@ In order to implement the function of changing the window title with input text,
     .. sourcecode:: c++
 
       titleInput.callback().onTextChange =
-      [&](TextBox* obj, const std::wstring& text)
+      [&](RawTextInput* obj, const std::wstring& text)
       {
           mwnd.setTitle(text);
       };
@@ -156,6 +156,7 @@ In order to implement the function of changing the window title with input text,
 
       def changeMwndTitle(obj, text):
           mwnd.title = text
+
       titleInput.f_onTextChange = changeMwndTitle
 
 Similarly, you can also set the ``onMouseButtonRelease`` callback function of ``FlatButton``, which will be called after the button is clicked (to continuously complete the press and release actions):
@@ -180,6 +181,7 @@ Similarly, you can also set the ``onMouseButtonRelease`` callback function of ``
       def restoreMwndTitle(clkp, e):
           titleInput.text = ''
           mwnd.title = DEMO_NAME
+
       restoreButton.f_onMouseButtonRelease = restoreMwndTitle
 
 Note that we must first clear the text box and then set the window title (but not vice versa), otherwise the ``onTextChange`` callback function will clear it again after setting the window title.
@@ -187,16 +189,14 @@ Note that we must first clear the text box and then set the window title (but no
 To Be More Elegant
 ------------------
 
-Compared to concise callback function setting in Python, C++ developers may have noticed that the strict typing of C++ makes it a bit complicated. In order to write the corresponding callback function, we have to refer to the function prototype to copy relevant parameters and return value information. That is not elegant at all, and we provide a better solution as follows.
-
-There is a help-header **Callback.h** for C++ developers, which includes the signature-macros of built-in callback functions, and helps simplify the process of setting callback functions in C++:
+Compared to concise callback function setting in Python, C++ developers may have noticed that the strict typing of C++ makes it a bit complicated. In order to write the corresponding callback function, we have to refer to the function prototype to copy relevant parameters and return value information. That is not elegant at all, and we provide a better solution in D14UIKit: There is a help-header **Callback.h** for C++ developers, which includes the signature-macros of built-in callback functions, and helps simplify the process of setting callback functions in C++:
 
 .. sourcecode:: c++
   :emphasize-lines: 1
 
   #include "Callback.h"
 
-  titleInput.D14_onTextChange(TextBox, obj, text, &)
+  titleInput.D14_onTextChange(obj, text, &)
   {
       mwnd.setTitle(text);
   };

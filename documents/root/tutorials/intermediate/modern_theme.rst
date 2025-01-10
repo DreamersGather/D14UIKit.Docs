@@ -189,4 +189,5 @@ Finally, set UI event callbacks:
               app.themeMode = text
           elif text == 'Use system setting':
               app.useSystemTheme = True
+
       themeSelector.f_onSelectedChange = changeThemeMode

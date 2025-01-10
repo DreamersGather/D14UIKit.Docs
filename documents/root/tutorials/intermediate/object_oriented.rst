@@ -102,7 +102,7 @@ Similarly, in order to draw text, we need to create a ``Label`` object and assoc
       textArea.setText(L"This is a label");
       textArea.setHorzAlign(Label::HCenter);
 
-      Font::load(
+      auto font1 = Font::load(
           L"MyFont",
           L"Times New Roman",
           20,
@@ -111,7 +111,10 @@ Similarly, in order to draw text, we need to create a ``Label`` object and assoc
           Font::Italic,
           Font::Expanded);
 
-      textArea.setFont(Font(L"MyFont"));
+      auto font2 = Font(L"MyFont");
+
+      textArea.setFont(&font1);
+      //textArea.setFont(&font2);
 
   .. tab:: Python
 
@@ -128,10 +131,18 @@ Similarly, in order to draw text, we need to create a ``Label`` object and assoc
       textArea.text = 'This is a label'
       textArea.horzAlign = Label.HCenter
 
-      Font.load("MyFont", "Times New Roman", 20, "en-us", \
-                Font.ExtraBold, Font.Italic, Font.Expanded)
+      font1 = Font.load( \
+          "MyFont", \
+          "Times New Roman", \
+          20, "en-us", \
+          Font.ExtraBold, \
+          Font.Italic, \
+          Font.Expanded)
 
-      textArea.font = Font('MyFont')
+      font2 = Font('MyFont')
+
+      textArea.font = font1
+      #textArea.font = font2
 
 It is worth noting that ``Font::load`` only needs to be called once for each customized font type. In fact, the actual font entity has already been created by calling ``Font::load``, and creating a ``Font`` object just makes a reference to the global entity, which helps improve performance.
 
@@ -168,6 +179,12 @@ Alternatively, we can use the default font directly to avoid creating customized
       busyArea.horzAlign = Label.HCenter
 
       busyArea.fontSize = 20
+
+Note that for performance considerations, the text in D14UIKit is rendered using predetermined text layout data. Therefore, when the ``Label``'s text changes, some of the properties of the original text layout (such as font size) will be reset. This is why the text setting should be placed last.
+
+.. note::
+
+   If you want to retain the original properties after the text changes, you need to replace the font (which will change the default text layout data) instead of directly setting the font properties.
 
 In addition to images and fonts, each callback function/event of UI objects is also a non-UI object. It is basically implemented with the concept of functor in modern C++/Python languages:
 

@@ -44,7 +44,7 @@ virtual void onMove(MoveEvent* event);'''
     uicodSrcBox.textRect = Rect(5, 5, 345, 479)
 
     uicodGenBtn = FilledButton('生成')
-    uicodGenBtn.fontFamilyName = '默认'
+    uicodGenBtn.content.label.fontFamilyName = '默认'
 
     uicodGenBtn.parent = clntArea
     uicodGenBtn.size = Size(60, 64)
@@ -89,6 +89,7 @@ virtual void onMove(MoveEvent* event);'''
             root = camel2underl(uicodRotBox.text)
             lines = uicodSrcBox.text.splitlines()
             lines = [l.strip() for l in lines if l != '']
+            lines = [l.strip() for l in lines if not l.startswith('//')]
             vertm = list()
             ddesc = list()
             for l in lines:
@@ -110,6 +111,7 @@ virtual void onMove(MoveEvent* event);'''
                             ':\n\n  **' + l + '**')
             vertmDstBox.text = '\n'.join(vertm)
             ddescDstBox.text = '\n\n'.join(ddesc)
+
     uicodGenBtn.f_onMouseButtonRelease = autoGenV
 
     exit(app.run())

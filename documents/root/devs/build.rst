@@ -46,6 +46,8 @@ Everything is ready and we can start building D14UIKit. The project structure is
   * **Images**
   * **Shaders**
 
+* **Dist** (Created after running pack.ps1)
+
 * **Exp** (Wrapper Code of PIMPL)
 
   * **Inc** (C++ Interfaces)
@@ -53,7 +55,6 @@ Everything is ready and we can start building D14UIKit. The project structure is
   * **.h/.cpp** (Implementation)
 
 * **Inc** (External Headers)
-* **Out** (Created after running pack.ps1)
 * **Src** (Migrated from D14Engine)
 
   * **Common**
@@ -69,10 +70,10 @@ Everything is ready and we can start building D14UIKit. The project structure is
 
   * **TestMain.cpp** (Used for testing C++ wrapper)
 
-* **pack.ps1** (Used for packing wrappers to **Out**)
+* **pack.ps1** (Used for packing wrappers to **Dist**)
 * **Miscellaneous**
 
-Open **D14UIKit. sln** in Visual Studio, and there are three projects in the explorer window:
+Open **D14UIKit.sln** in Visual Studio, and there are three projects in the explorer window:
 
 .. tip::
 
@@ -135,29 +136,14 @@ Build Python Wrapper
 2. Select one configuration from **DPyBind/RPyBind | (x64)**.
 3. Build or run the project.
 
-.. important::
-
-   Building Python wrapper depends on **pybind11** package, which can be installed by:
-
-   .. sourcecode:: bat
-
-      > pip install pybind11
-
-   After installed, use the following command to get the installation paths of **pybind11**:
-
-   .. sourcecode:: bat
-
-      > py -m pybind11 --includes
-
-   Update ``include_directories`` and ``library_paths`` of the configuration according to the output.
-
-   Detailed configuration steps can be found in this `article`_ on MSDN.
-
-.. _article: https://learn.microsoft.com/en-us/visualstudio/python/working-with-c-cpp-python-in-visual-studio
-
 .. note::
 
-   The configuration searches **%UserProfile%\AppData\Local\Programs\Python\Python310** by default, so there is no need to update the configuration if you install Python 3.10.x at the default path.
+   You can use ``stubgen`` to generate a hint file for Python (D14UIKit.pyi):
+
+   .. sourcecode:: bat
+
+      > pip install mypy
+      > stubgen -m D14UIKit -o .
 
 Test C++ Wrapper
 ----------------
@@ -210,9 +196,9 @@ Test Python Wrapper
 Pack Libraries
 --------------
 
-Run ``pack.ps1 v1_0`` in Windows PowerShell to generate/update **Out**, where the version label ``v1_0`` will be used to name the zips (**d14uikit_cpp_v1_0.zip** and **d14uikit_python_v1_0.zip** in this case).
+Run ``pack.ps1 v1.0`` in Windows PowerShell to generate/update **Dist**, where the version label ``v1.0`` will be used to name the zips (**d14uikit_cpp_v1.0.zip** and **d14uikit_python_v1.0.zip** in this case).
 
-* **Out**
+* **Dist**
 
   * **cpp** (C++ Wrapper)
 
@@ -230,8 +216,8 @@ Run ``pack.ps1 v1_0`` in Windows PowerShell to generate/update **Out**, where th
     * **D14UIKit.pyd** (Python DLL)
     * **D14UIKit.pyi** (Python Stub File)
 
-  * **d14uikit_cpp_v1_0.zip** (zip of **cpp**)
-  * **d14uikit_python_v1_0.zip** (zip of **python**)
+  * **d14uikit_cpp_v1.0.zip** (zip of **cpp**)
+  * **d14uikit_python_v1.0.zip** (zip of **python**)
 
 .. tip::
 
@@ -239,4 +225,4 @@ Run ``pack.ps1 v1_0`` in Windows PowerShell to generate/update **Out**, where th
 
    .. sourcecode:: bat
 
-      > powershell -f pack.ps1 v1_0
+      > powershell -f pack.ps1 v1.0

@@ -1,4 +1,4 @@
-.. _d14uikit-tutorials-elementary-dpi_adaption:
+.. _d14uikit-tutorials-beginner-dpi_adaption:
 
 DPI Adaption
 ============
@@ -9,7 +9,7 @@ DPI Adaption
 
   The source code of the demo can be found in **d14uikit/demo**.
 
-.. _d14uikit-tutorials-elementary-dpi_adaption-display_scale:
+.. _d14uikit-tutorials-beginner-dpi_adaption-display_scale:
 
 Display Scale
 -------------
@@ -86,4 +86,4 @@ If the DPI parameter is not specified, it will query the scaling setting set by 
 
 .. note::
 
-   Note that the Windows operating system has a global scaling setting (as shown in :ref:`d14uikit-tutorials-elementary-dpi_adaption-display_scale` above). Additionally, there are individual scaling settings for each application (right-click on the exe → Properties → Compatibility → Change high DPI settings). Therefore, if you want the application to be DPI-aware, do not specify this parameter. Alternatively, you can query the DPI through other system APIs (such as Win32 or certain Python packages) and manually manage the relevant data, allowing users to choose the actual DPI to use.
+   Note that the Windows operating system has a global scaling setting (as shown in :ref:`d14uikit-tutorials-beginner-dpi_adaption-display_scale` above). Additionally, there are individual scaling settings for each application (right-click on the exe → Properties → Compatibility → Change high DPI settings). Therefore, if you want the application to be DPI-aware, do not specify this parameter. Alternatively, you can query the DPI through other system APIs (such as Win32 or certain Python packages) and manually manage the relevant data, allowing users to choose the actual DPI to use.

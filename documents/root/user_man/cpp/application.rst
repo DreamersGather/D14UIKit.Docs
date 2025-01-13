@@ -257,7 +257,7 @@ Details
 
     A DPI value that is not a multiple of 96 dpi may cause blurry display. The reason why we use "may" here is that it also depends on the actual size of the UI object. For example: at 125% scaling (i.e. 120 dpi), rendering a 100x100 dip image is based on a 125x125 px offscreen texture; however, for a 90x90 dip image, the texture size in theory is 112.5x112.5 px, and the actual size must be 112/113 px, which causes the image scaled and blurred.
 
-    The tutorial :ref:`d14uikit-tutorials-elementary-dpi_adaption` gives a brief introduction to DPI.
+    The tutorial :ref:`d14uikit-tutorials-beginner-dpi_adaption` gives a brief introduction to DPI.
 
 .. _d14uikit-reference-cpp-application-sttcm-app:
 

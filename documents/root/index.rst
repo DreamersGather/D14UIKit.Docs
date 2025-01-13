@@ -18,16 +18,17 @@ Next Step
 
 If you are new to D14UIKit, we recommend you to read the following tutorials that demonstrate the basic usages of D14UIKit:
 
-* Elementary
+* Beginner
 
-  * :ref:`d14uikit-tutorials-elementary-hello_window`
-  * :ref:`d14uikit-tutorials-elementary-dpi_adaption`
+  * :ref:`d14uikit-tutorials-beginner-hello_window`
+  * :ref:`d14uikit-tutorials-beginner-dpi_adaption`
 
 * Intermediate
 
   * :ref:`d14uikit-tutorials-intermediate-object_oriented`
   * :ref:`d14uikit-tutorials-intermediate-layout_control`
   * :ref:`d14uikit-tutorials-intermediate-basic_callback`
+  * :ref:`d14uikit-tutorials-intermediate-frame_animation`
   * :ref:`d14uikit-tutorials-intermediate-modern_theme`
 
 * Advanced
@@ -110,11 +111,11 @@ On the one hand, these characteristics of UIKit make it difficult to get started
    :caption: User's Manual
    :hidden:
 
-   man/cpp/index
-   man/python/index
+   user_man/cpp/index
+   user_man/python/index
 
 .. toctree::
    :caption: Developer Guides
    :hidden:
 
-   devs/build
+   dev_guide/build

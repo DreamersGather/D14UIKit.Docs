@@ -1,4 +1,4 @@
-.. _d14uikit-tutorials-elementary-hello_window:
+.. _d14uikit-tutorials-beginner-hello_window:
 
 Hello Window
 ============

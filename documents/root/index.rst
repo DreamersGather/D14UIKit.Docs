@@ -92,11 +92,6 @@ The core UI framework of D14UIKit is based on native Win32 APIs, and all graphic
      - ✗
      - ✓
      - ✗
-   * - Customizable
-     - ✗
-     - ✓
-     - ✓
-     - ✓
 
 Inspiration
 -----------

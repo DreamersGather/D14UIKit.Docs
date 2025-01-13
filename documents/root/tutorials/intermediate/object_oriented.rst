@@ -163,6 +163,7 @@ Alternatively, we can use the default font directly to avoid creating customized
       busyArea.setText(L"Try moving cursor in this area");
       busyArea.setHorzAlign(Label::HCenter);
 
+      // set this after `text`
       busyArea.setFontSize(20);
 
   .. tab:: Python
@@ -178,9 +179,10 @@ Alternatively, we can use the default font directly to avoid creating customized
       busyArea.text = 'Try moving cursor in this area'
       busyArea.horzAlign = Label.HCenter
 
+      # set this after `text`
       busyArea.fontSize = 20
 
-Note that for performance considerations, the text in D14UIKit is rendered using predetermined text layout data. Therefore, when the ``Label``'s text changes, some of the properties of the original text layout (such as font size) will be reset. This is why the text setting should be placed last.
+Note that for performance considerations, the text in D14UIKit is rendered using predetermined text layout data. Therefore, when the ``Label``'s text changes, some of the properties of the original text layout (such as font size) will be reset. This is why the ``fontSize`` setting should be placed last.
 
 .. note::
 

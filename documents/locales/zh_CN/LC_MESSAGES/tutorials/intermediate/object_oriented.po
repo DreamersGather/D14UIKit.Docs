@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, yiyaowen
+# This file is distributed under the same license as the D14UIKit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: D14UIKit alpha && beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 16:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:4
+#: 1eec7ecffc5c4202b81e6f213f462a6e
+msgid "Object Oriented"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:10
+#: e45a3438341e4b98847248c191aec7f2
+msgid "The source code of the demo can be found in **d14uikit/demo**."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:13
+#: 3a105075d902462d88d8f6cf68f3e45b
+msgid "UI Object"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:15
+#: 183b745b180c4e3daabeddc751718aaa
+msgid ""
+"``Panel`` is the most derived UI object in D14UIKit. It represents a "
+"rectangular area on the screen, where we can draw an image or place other"
+" UI objects (as children). Let's start with ``MainWindow``:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:19
+#: ../../root/tutorials/intermediate/object_oriented.rst:39
+#: ../../root/tutorials/intermediate/object_oriented.rst:62
+#: ../../root/tutorials/intermediate/object_oriented.rst:90
+#: ../../root/tutorials/intermediate/object_oriented.rst:153
+#: ../../root/tutorials/intermediate/object_oriented.rst:195
+#: 1d691577b3df408f88c61d59d8c6507b 9bd88826f5854d15bd2f95a20fb59cf2
+#: a57c91efc65f47909b113b39e3bf137b bf5b552a32dc44db80d61b0b01498d28
+#: c0d235ea2fcb4accb0f7cd315440c18a db233a0bf7a841bba4228db23745d288
+msgid "C++"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:25
+#: ../../root/tutorials/intermediate/object_oriented.rst:46
+#: ../../root/tutorials/intermediate/object_oriented.rst:74
+#: ../../root/tutorials/intermediate/object_oriented.rst:119
+#: ../../root/tutorials/intermediate/object_oriented.rst:169
+#: ../../root/tutorials/intermediate/object_oriented.rst:206
+#: 028a220834ba4a34b0159fa08fc2c7a9 0e79e984d3134521b8aa1ada58901fd5
+#: 23473026497b4776913ceba2c10459fa 31b498513c694af2948757cf43d600ef
+#: a7c5f349d5af47ea81d42f075bda24ed b542b9b589614ea399bb7afcc36b3e83
+msgid "Python"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:31
+#: 74235cb539914919aaac80c93100343c
+msgid ""
+"As mentioned above, ``MainWindow`` is derived from ``Panel``, and its "
+"rectangular area is divided into two parts: the non-client and the client"
+" area. The non-client area contains a caption and a decorative bar, and "
+"the center of the window is the client area:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:35
+#: b82a652feca24f6aa0e531d2440e314f
+msgid ""
+"There is a sizing frame around the window, which also belongs to the non-"
+"client area."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:54
+#: 03cffe73e325419e94a5e1fd59d945c1
+msgid "Non-UI Object"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:56
+#: 5bfa6902f14346908b551650e34a561a
+msgid ""
+"In addition to UI objects derived from ``Panel``, there are also non-UI "
+"objects in D14UIKit, which are not directly displayed on the screen, such"
+" as ``Image`` and ``Font``."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:58
+#: a8961edb160a4b01819b2e4b6f723a3c
+msgid ""
+"To display an image on the screen, we first need to create an ``Image`` "
+"object with target bitmap, and then create a ``Panel`` object for "
+"displaying the image:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:86
+#: 1fbe526049f94c5fb0c5c776582ae021
+msgid ""
+"Similarly, in order to draw text, we need to create a ``Label`` object "
+"and associate it with a ``Font`` object (optional, there is a global "
+"default ``Font`` for ``Label``):"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:147
+#: 0b33cf0f6d9a4f79808587dd39497fd6
+msgid ""
+"It is worth noting that ``Font::load`` only needs to be called once for "
+"each customized font type. In fact, the actual font entity has already "
+"been created by calling ``Font::load``, and creating a ``Font`` object "
+"just makes a reference to the global entity, which helps improve "
+"performance."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:149
+#: 9b8df013a55d4756af080ca0dabcc14e
+msgid ""
+"Alternatively, we can use the default font directly to avoid creating "
+"customized font objects:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:185
+#: b6cc451b35a346faabf8d610936bd5ea
+msgid ""
+"Note that for performance considerations, the text in D14UIKit is "
+"rendered using predetermined text layout data. Therefore, when the "
+"``Label``'s text changes, some of the properties of the original text "
+"layout (such as font size) will be reset. This is why the ``fontSize`` "
+"setting should be placed last."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:189
+#: d1bc4c4bd7834f0b817645a65cda5aa1
+msgid ""
+"If you want to retain the original properties after the text changes, you"
+" need to replace the font (which will change the default text layout "
+"data) instead of directly setting the font properties."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/object_oriented.rst:191
+#: ba62e189b6714d5b97fecc65b5a550df
+msgid ""
+"In addition to images and fonts, each callback function/event of UI "
+"objects is also a non-UI object. It is basically implemented with the "
+"concept of functor in modern C++/Python languages:"
+msgstr ""
+

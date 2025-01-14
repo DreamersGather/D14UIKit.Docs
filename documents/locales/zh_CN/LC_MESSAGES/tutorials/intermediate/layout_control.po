@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, yiyaowen
+# This file is distributed under the same license as the D14UIKit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: D14UIKit alpha && beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 16:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../root/tutorials/intermediate/layout_control.rst:4
+#: 7bd8cc61d4ab4d2fb33b9960d4ed6db5
+msgid "Layout Control"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:10
+#: 2dda7ce1fdaf4c07bb79a331bff96ffd
+msgid "The source code of the demo can be found in **d14uikit/demo**."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:13
+#: 41464d78992a4141be7f7595108a3428
+msgid "Adaptive Layout"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:15
+#: 0998cd123ef246b28e8f3bb08bfd01d7
+msgid ""
+"There are two ways to add new UI objects to a D14UIKit application: make "
+"it a child of a ``Panel``, or make it an element of a ``Layout``. The "
+"former way is relatively straightforward, and here we mainly introduce "
+"the usage of ``Layout``."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:17
+#: b3cb9ac5d9574f2aa5fc3298c27c1ff9
+msgid ""
+"There are two built-in modes for layout control: Constraint and Grid. As "
+"the name suggests, Constraint achieves layout control by limiting the "
+"distance between elements and their master layout in each direction, "
+"while Grid achieves layout control by \"stuffing\" elements into pre-"
+"divided grids. The following figure is a visual comparison of these two "
+"methods:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:22
+#: e513f092f5d5433aab35d3d232b8f02d
+msgid "Simple Practice"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:24
+#: 12fe68a4f112466695fb27a77da17c98
+msgid ""
+"Just as we can use a ``Panel`` as the content of ``MainWindow``, we can "
+"also use a ``Layout`` to fill the client area of the window. The default "
+"grid size of ``GridLayout`` is 1x1, and we set the number of horizontal "
+"grids as 2 to place the demonstration elements of Constraint and Grid "
+"respectively:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:28
+#: ../../root/tutorials/intermediate/layout_control.rst:54
+#: ../../root/tutorials/intermediate/layout_control.rst:105
+#: ../../root/tutorials/intermediate/layout_control.rst:172
+#: 04f5fd88c94d43d3ab666cc48492cd79 894a15c307d24b958294de4803a1536d
+#: d89a85bb6ef947f3a645307b419c3662 f2154e75b16b482eb9162f39b4a836ad
+msgid "C++"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:39
+#: ../../root/tutorials/intermediate/layout_control.rst:72
+#: ../../root/tutorials/intermediate/layout_control.rst:123
+#: ../../root/tutorials/intermediate/layout_control.rst:298
+#: 6dfef25b33de407b8c84c39d364b5549 7acf5cde93124376a5034c6e6ba1ee56
+#: a5c8a68a046b4c76bb95a18ef084f841 c58a03ca08834a02aec00f5119bbd1b2
+msgid "Python"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:50
+#: 4fb258c413464fb2a81ec8fc0abd1da3
+msgid "First, we create a container to demonstrate the usage of ``GridLayout``:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:88
+#: 12d653e094f94f839523e637922f7ec6
+msgid ""
+"In order to add elements to ``GridLayout``, it is necessary to fill in "
+"the corresponding ``GeoInfo`` structures, which contain the geometry "
+"information of the UI objects to be added."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:90
+#: 41eba14738ca4cc796ea12e43cdb79b0
+msgid ""
+"For ``GridLayout::GeoInfo``, the ``x`` and ``y`` fields are both "
+"``Range`` structures, which can be used to specify the ``offset`` and "
+"``count`` (unit: grid) of the UI objects in corresponding directions:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:101
+#: 65ba0525581c4577907611c576e0885d
+msgid ""
+"Next, we create an element to demonstrate the usage of "
+"``ConstraintLayout``:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:141
+#: 8182008fe2f0419e9ebd8f3e43f9a1ff
+msgid ""
+"For ``ConstraintLayout::GeoInfo``, except for the ``Xxx.ToYyy`` fields, "
+"there are two options of ``keepWidth`` and ``keepHeight``: if they are "
+"true, the element to be added will always keep its original size, and "
+"``Layout`` only changes its relative position:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:166
+#: 018c6290914445b690e1516f386e453f
+msgid ""
+"It is worth noting that ``Xxx.ToYyy`` fields are all optional, and for "
+"fields that are not specified, ``Layout`` simply does not constrain the "
+"corresponding distance. Besides, contradictory constraints are allowed. "
+"For example, when specifying both ``Top.ToTop`` and ``Top.ToBottom`` as "
+"the same value, ``Layout`` will only use one of them (depending on "
+"specific implementation). It is recommended to intentionally avoid "
+"contradictory constraints rather than let D14UIKit decide."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/layout_control.rst:168
+#: f2c39ddbbb4a4557a08224dd6709922e
+msgid ""
+"Finally, the complete demo code (so much repetitive creation and layout "
+"work) is as follows. Note that ``app.resizable`` is set as true to help "
+"observe the adaptive layout as window size changes:"
+msgstr ""
+

@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, yiyaowen
+# This file is distributed under the same license as the D14UIKit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: D14UIKit alpha && beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 16:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:4
+#: 053226eb5d7646b58cca9d999671ad44
+msgid "Advanced Callback"
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:10
+#: b7a4d51e59cf4bf0a0d9f8e6867ee8a7
+msgid "The source code of the demo can be found in **d14uikit/demo**."
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:12
+#: 16c78a4d7e264f96831435cb7a228442
+msgid ""
+"In this section, we will create a simple yet complete **paint.exe** to "
+"demonstrate the advanced usage of callback functions in D14UIKit."
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:15
+#: 470e30e3abcd4755a7306ea72213f666
+msgid "Final Test"
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:17
+#: 6f4ba029c024473f8cccc1657dde5f11
+msgid ""
+"Readers who have reached this section must already be familiar with the "
+"development of D14UIKit, so you can consider the demo in this section as "
+"a final test. The demo source **d14uikit/demo/AdvancedCallback.cpp** have"
+" detailed comments. If you can fully understand the meaning of each code "
+"in the program, then congratulations: you have just entered the world of "
+"D14UIKit development."
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:20
+#: ee2d4f2cd688442b9496303ba71877a5
+msgid "Next Steps"
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:22
+#: 5ea0e40dee894ddcbde676272ef1ad2c
+msgid ""
+"As a drawing program, this demo is still in a relatively raw stage. For "
+"example, it does not support changing the brush color, and the brush "
+"stroke does not look very real. We have summarized some points to "
+"improve, and you can continue to develop the program if interested:"
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:24
+#: 874fcc41cb57445595d27fb4ffa60913
+msgid "**Support Different Brush Colors**:"
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:26
+#: fef5d270ac2544768d41c8f5680318a9
+msgid ""
+"The current program can only use the system theme color as the brush "
+"color. Perhaps we can design a ``Panel`` that uses the brush color as its"
+" background, and when we click on it, a dialog box will pop up for us to "
+"choose another color. It seems easy to achieve this function by writing "
+"some callback functions. As for the modal dialog box, perhaps a "
+"combination of an invisible ``Panel`` (used to intercept UI events) and "
+"an upper Window (used as a dialog box) can be somehow useful."
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:28
+#: 5211d82b1371412e97fbc0ad68c80e71
+msgid "**Support More Real Brush Stroke**:"
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:30
+#: 6880e19fc3d249dd933c3c5c80aaa0e0
+msgid ""
+"As a drawing program, having only one type of brush stroke (Pencil) seems"
+" kind of boring, and the current drawing logic is relatively ugly (just "
+"generating a solid color square around the stroke). Under this logic, the"
+" ink line often breaks due to the discrete mouse movement events. Perhaps"
+" this problem can be solved by directly drawing continuous lines/curves "
+"with ``cursorPoint`` and ``lastCursorPoint`` methods/properties of "
+"``Application``. How to map an abstract geometry shape to discrete pixels"
+" on the screen is a fundamental problem in CG (Computer Graphics). For "
+"readers who are not familiar with related knowledge, it is great to start"
+" by learning the basic line generation algorithms (such as the Bresenham "
+"algorithm)."
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:32
+#: b5e6440fdc0e46ebb4a3818c6d368599
+msgid "**Even Create an Adobe Photoshop**:"
+msgstr ""
+
+#: ../../root/tutorials/advanced/advanced_callback.rst:34
+#: e812f6acaab84b7990cb6b88d630c6c8
+msgid ""
+"The canvas is implemented by an ``Image`` object, and the ``Image`` in "
+"D14UIKit supports effective memory mapping and copying between 2U (CPU & "
+"GPU). Therefore, we can implement various fantastic digital image "
+"processing algorithms, and even create an Adobe Photoshop!"
+msgstr ""
+

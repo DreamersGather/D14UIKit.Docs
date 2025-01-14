@@ -24,3 +24,11 @@ sphinx_tabs_disable_tab_closing = True
 html_theme = 'furo'
 html_logo = 'https://media.githubusercontent.com/media/DreamersGather/D14UIKit.Res/main/logo.png'
 html_favicon = 'https://media.githubusercontent.com/media/DreamersGather/D14Project.Res/main/logo.png'
+
+# -- Options for internationalisation ----------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-internationalisation
+
+locale_dirs = ['../locale/']
+
+gettext_uuid = True
+gettext_compact = False

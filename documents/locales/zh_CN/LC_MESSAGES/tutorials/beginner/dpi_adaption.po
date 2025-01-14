@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, yiyaowen
+# This file is distributed under the same license as the D14UIKit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: D14UIKit alpha && beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 16:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:4
+#: 087e7bf837a7443aa22def03434bb1a8
+msgid "DPI Adaption"
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:10
+#: b5a0d22a3973446a85f5d898c94ce01c
+msgid "The source code of the demo can be found in **d14uikit/demo**."
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:15
+#: 311325a583f74482b902419ce1c5faeb
+msgid "Display Scale"
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:17
+#: fcec4cec406d4bfd9b54f47a68de0194
+msgid "Windows 10/11 users may be familiar with the following option:"
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:21
+#: 0e9e4b12e2834354bc1d5096caa94d13
+#, python-format
+msgid ""
+"For Windows 7 and older versions, the option can be found in control "
+"panel (high-DPI scaling is supported starting from Windows XP). In "
+"general, 100% scaling is displayed in 96 dpi (192 dpi for 200% scaling "
+"and so on). In terms of GUI appearance, as the scaling ratio increases, "
+"the size of a UI control will increase, and bitmap images may become "
+"blurry (while vector images keep sharp)."
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:24
+#: 546e52358f8c4dabbe6e588671d7f50d
+msgid "DPI: Dots Per Inch"
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:26
+#: 7484a6410f0a43f795849319bab1ee5c
+msgid ""
+"DPI stands for \"Dots Per Inch\". As we all known, \"Inch\" is a physical"
+" unit of length. In similar, \"Dot\" is a virtual unit of length on "
+"bitmap plane, and it can refer to a pixel on bitmap screen or an ink dot "
+"on printing paper. Therefore, DPI is a bridge connecting the physical "
+"world and the virtual screen. After determining the DPI, the number of "
+"pixels occupied by a display-object can be calculated from its physical "
+"size, and vice versa. For example, in 96 dpi, a 1 inch line would occupy "
+"96 pixels on screen or 96 ink dots on paper."
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:28
+#: 4fc0a67ffcec494eb5d0b7c7fd147ff8
+msgid ""
+"In fact, DPI is often used to describe the sensitivity of electronic "
+"devices. For example, considering a 1000 dpi mouse, its cursor moves 1000"
+" pixels on screen every time the related device moves 1 inch on physical "
+"plane. In addition, on Windows platform, there is a concept called Device"
+" Independent Pixel (DIP), which is easily confused with Dots Per Inch "
+"(DPI). DIP is a pixel unit in logical space, and it is often mapped to "
+"multiple pixels in physical space. Applying DIP coordinates provides "
+"great convenience for GUI development, as Windows automatically converts "
+"logical pixels into physical pixels according to different DPI settings, "
+"which ensures the object can be displayed correctly on screens of "
+"different sizes and resolutions."
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:30
+#: 6ee6b5bc8c844660bedc5e815a56c5cd
+msgid ""
+"For example, a 100 dip line would occupy 100 physical pixels on a 96 dpi "
+"screen, while on a 192 dpi screen it would occupy 100*(192/96)=200 "
+"physical pixels. More details can be found in this `article`_ on MSDN, "
+"where the content of Direct2D and hig-DPI is also helpful for "
+"development."
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:35
+#: 28965f96d2b347b2aca77e09d27d4290
+msgid "DPI in D14UIKit"
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:37
+#: 47c11ff0392e44708625a1c1cc564131
+msgid "Setting the DPI of an application in D14UIKit is very straightforward:"
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:41
+#: b86bb7fcdede473aa7c8861d883785c9
+msgid "C++"
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:65
+#: fe02c9559e9346109fc94b6592e6ecf8
+msgid "Python"
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:85
+#: 8065cfd163964abdb143964130ccd575
+msgid ""
+"If the DPI parameter is not specified, it will query the scaling setting "
+"set by the Windows operating system for the current process during "
+"creation and automatically apply it."
+msgstr ""
+
+#: ../../root/tutorials/beginner/dpi_adaption.rst:89
+#: 1b236511b5d14ecc8febfe517f946232
+msgid ""
+"Note that the Windows operating system has a global scaling setting (as "
+"shown in :ref:`d14uikit-tutorials-beginner-dpi_adaption-display_scale` "
+"above). Additionally, there are individual scaling settings for each "
+"application (right-click on the exe → Properties → Compatibility → Change"
+" high DPI settings). Therefore, if you want the application to be DPI-"
+"aware, do not specify this parameter. Alternatively, you can query the "
+"DPI through other system APIs (such as Win32 or certain Python packages) "
+"and manually manage the relevant data, allowing users to choose the "
+"actual DPI to use."
+msgstr ""
+

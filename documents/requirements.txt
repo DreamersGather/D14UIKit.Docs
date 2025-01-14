@@ -1,2 +1,3 @@
 furo
+sphinx-intl
 sphinx-tabs

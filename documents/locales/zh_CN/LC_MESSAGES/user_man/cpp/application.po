@@ -1,0 +1,865 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, yiyaowen
+# This file is distributed under the same license as the D14UIKit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: D14UIKit alpha && beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 16:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../root/user_man/cpp/application.rst:4 ece96df0fa864dd39353545e4e5733fc
+msgid "Application"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:7 779b37c970a24e7a8274a7db6383275f
+msgid "Overview"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:13 a180631459904a6e8455e502f878e911
+msgid "Header"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:14 efe440e9e8e04c5c9e1b6f27624ef1d9
+msgid "Application.h"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:15 ddf9a9aa115e42eaa4105d6013e922a7
+msgid "Inherits"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:16 3103db793d1844e79c6745ecbcacc20c
+msgid "NonCopyable"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:18 4f4e6f87068f4e65a6040b4b83d583d7
+msgid ""
+"``Application`` is the core class for creating a typical D14UIKit "
+"application."
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:21 2f21c789fe2142aaa241df74c91c1935
+msgid "Constructors"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:26 5c59834e0fca4d22a5196cee2a96cd17
+msgid ""
+":ref:`Application<d14uikit-reference-cpp-application-ctor-1>` (const "
+"std::wstring& name = L\"D14UIKit\", const std::optional<float>& dpi = "
+"std::nullopt)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:29 902c75d7bee54916838aa7c90aafb25a
+msgid "Static Methods"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:35 2b6d71df14584ce9a8a45a32e50c4d59
+msgid "Application*"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:36 421a35e0c0a9408c8a1e19ae38cb7938
+msgid ":ref:`app<d14uikit-reference-cpp-application-sttcm-app>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:39 cda631c1d6334035b97a18603e05eb13
+msgid "Instance Methods"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:45
+#: ../../root/user_man/cpp/application.rst:54
+#: ../../root/user_man/cpp/application.rst:84
+#: ../../root/user_man/cpp/application.rst:90
+#: ../../root/user_man/cpp/application.rst:102
+#: ../../root/user_man/cpp/application.rst:108
+#: ../../root/user_man/cpp/application.rst:120
+#: ../../root/user_man/cpp/application.rst:126
+#: ../../root/user_man/cpp/application.rst:144
+#: ../../root/user_man/cpp/application.rst:162 0c52053a3f4a49c9a7368bc590ef3a46
+#: 120f2ce0b96045f0954c03977ec295fc 2d05ec968e2e498d9d69d22e64996c73
+#: 60e8a97120854636ae52cf65e7a8e6b9 66f8c45b82114f488473d8eb4753162e
+#: 679717f16d994aad9f7c8ad334d88df0 7582be2b441b482da45070d43ca2a04b
+#: b5caaa87717040d88bb4bca887741110 bffe1f18be974a6e99f2909f7c4dfa20
+#: d3ffac9fde0d4a379c9d0e3953664854
+msgid "int"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:46 cf60b257c8ec4c4cb8d9abc9ca24ab50
+msgid ":ref:`dpi<d14uikit-reference-cpp-ui_objects-application-isntm-dpi>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:47
+#: ../../root/user_man/cpp/application.rst:50
+#: ../../root/user_man/cpp/application.rst:56
+#: ../../root/user_man/cpp/application.rst:59
+#: ../../root/user_man/cpp/application.rst:62
+#: ../../root/user_man/cpp/application.rst:68
+#: ../../root/user_man/cpp/application.rst:74
+#: ../../root/user_man/cpp/application.rst:80
+#: ../../root/user_man/cpp/application.rst:86
+#: ../../root/user_man/cpp/application.rst:92
+#: ../../root/user_man/cpp/application.rst:98
+#: ../../root/user_man/cpp/application.rst:104
+#: ../../root/user_man/cpp/application.rst:110
+#: ../../root/user_man/cpp/application.rst:116
+#: ../../root/user_man/cpp/application.rst:122
+#: ../../root/user_man/cpp/application.rst:128
+#: ../../root/user_man/cpp/application.rst:134
+#: ../../root/user_man/cpp/application.rst:140
+#: ../../root/user_man/cpp/application.rst:146
+#: ../../root/user_man/cpp/application.rst:149
+#: ../../root/user_man/cpp/application.rst:152
+#: ../../root/user_man/cpp/application.rst:158
+#: ../../root/user_man/cpp/application.rst:164
+#: ../../root/user_man/cpp/application.rst:167
+#: ../../root/user_man/cpp/application.rst:173
+#: ../../root/user_man/cpp/application.rst:176
+#: ../../root/user_man/cpp/application.rst:182
+#: ../../root/user_man/cpp/application.rst:188
+#: ../../root/user_man/cpp/application.rst:194 134ba1b81f484eec851369d62e643bb1
+#: 23d0cdd0da37479da02b9e33554680b3 27d912d8fe7a49e8b30c98af9eb2d96b
+#: 42ec79fc87d241d3828d73660d76e997 457e825b1a194c73b0f56d021c33c296
+#: 4c5652d3e1934eac82a730d0e7ebac35 558f3bfccc2a44f79ff75b1af4f0b978
+#: 5a602a80e79c40dd893a3b02d4960941 69925c330dcc42519a9d3f92f438aac7
+#: 73cec3144171441a878e984a8a717570 740505e0c0bc4a8396d1281d34b07b34
+#: 7d59c34cf61a4632bc923931e1527da4 8ae7fbb47bec42cb9597cb313fbaaa97
+#: 9bbaf2173706449594ceb3b96bc75de8 a102bd6a25424063a672895418032fd1
+#: a7adaa7251ba4147a4f8b60e92c629e8 bf071a33e4fe42e787ba90e73967bed3
+#: c7ac36d82b0a4d1f906b5cea17956723 c7c15247b72a47fa9c721a691b58c2fe
+#: cafd14bed48a4b8abdfbfce907b6452b ceb8bf253d1048339dba03f6476d6f8e
+#: d4a5e7421138419199b6d11735a2d08c d743dc0ed3504b8088aad0a9af052498
+#: db13ccf23ea04ce79464991ed1baad08 dc8015ec7ba84225a1480cf04cf6d1d8
+#: e7aa66d673ae4c90a285362b4a15b1f2 e7de7c24b73c4826bb9bf8895c17e648
+#: eac1a7818a90482b8249e848ac391697 f4db2f6a225e4ba9b2e18898e9e56e50
+msgid "const"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:48 fc632143e2ae496ca2a884c35738bc44
+msgid "BitmapInterpMode"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:49 a1c0838ded0544e1ab1d5d7d02c3e9a6
+msgid ""
+":ref:`bitmapInterpMode<d14uikit-reference-cpp-ui_objects-application-"
+"isntm-bitmap_interp_mode>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:51
+#: ../../root/user_man/cpp/application.rst:57
+#: ../../root/user_man/cpp/application.rst:63
+#: ../../root/user_man/cpp/application.rst:69
+#: ../../root/user_man/cpp/application.rst:75
+#: ../../root/user_man/cpp/application.rst:81
+#: ../../root/user_man/cpp/application.rst:87
+#: ../../root/user_man/cpp/application.rst:93
+#: ../../root/user_man/cpp/application.rst:99
+#: ../../root/user_man/cpp/application.rst:105
+#: ../../root/user_man/cpp/application.rst:111
+#: ../../root/user_man/cpp/application.rst:117
+#: ../../root/user_man/cpp/application.rst:123
+#: ../../root/user_man/cpp/application.rst:129
+#: ../../root/user_man/cpp/application.rst:135
+#: ../../root/user_man/cpp/application.rst:141
+#: ../../root/user_man/cpp/application.rst:153
+#: ../../root/user_man/cpp/application.rst:159
+#: ../../root/user_man/cpp/application.rst:168
+#: ../../root/user_man/cpp/application.rst:177
+#: ../../root/user_man/cpp/application.rst:183
+#: ../../root/user_man/cpp/application.rst:189
+#: ../../root/user_man/cpp/application.rst:195 00f564c6fc7940abb15d71e0c8b04576
+#: 1ae6f0efce78459ea5760b9868dc2694 210fed82e67a4ea5af047671d80c1c69
+#: 22a4efa5387248f5a39616512fb313b7 419a257fe44c4df397929d9b629b865e
+#: 4259c3abcc4a46209283c8cdfaadd2d3 436b6a6755534f4f8e005da0017e68db
+#: 62faea8efdb9426d8dd6fcfa33fc059e 6c321c0a20c74c958f226a892740b002
+#: 6e219ad681914ebf9c26ca09f25f668f 7af5366ab9d24c558d90e3a25f8628a8
+#: 7e435c868bf8426f8c5c3f09091a03ca 92027a2ab4374084b43166b122f50ea8
+#: a63a90fef85743e79a2897ef9b6b8b68 a6d848c25eb04f8496b9da6b6a38a7c2
+#: b00aa62c578c454799fad7cee1d73997 b29f85f5cf3c41328c10e0b260e92d53
+#: b9c1128b649d46cf900111012407bd68 bc40624afe234dd495746ec1e083480a
+#: d2836a99d98d44719a10ea1cfb4c3acb d410c1585fea440da15431bedcbbe3fb
+#: fd7e6ad953d94c90a775d2201a188938 feecf2e582c7480aaa68448a68f15585
+msgid "void"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:52 b29b092f9b4346ab99a179952ba1519b
+msgid ""
+":ref:`setBitmapInterpMode<d14uikit-reference-cpp-ui_objects-application-"
+"isntm-set_bitmap_interp_mode>` (BitmapInterpMode mode)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:55 4be8206e2e2e486ebdc3acfa7a7928d9
+msgid ":ref:`run<d14uikit-reference-cpp-ui_objects-application-isntm-run>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:58 78e9a0c4305541fc8319fe7f16c97177
+msgid ":ref:`exit<d14uikit-reference-cpp-ui_objects-application-isntm-exit>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:60
+#: ../../root/user_man/cpp/application.rst:66
+#: ../../root/user_man/cpp/application.rst:72
+#: ../../root/user_man/cpp/application.rst:132
+#: ../../root/user_man/cpp/application.rst:138
+#: ../../root/user_man/cpp/application.rst:165
+#: ../../root/user_man/cpp/application.rst:186 0614bca150dd4f4484d0d12b2c3d491f
+#: 2ecf0cbae86348d9985e4956d3ce2f01 7b0b4089c61b4faf939d52a17f9acad7
+#: 7dc4b69c48884eee95c2d2ee6f99bd76 a16256107a604b86afcf006e7317302e
+#: b859f2a890db47f9affc422a39d0d7e2 d1a3e5e6e7e34b778e37e623d8eced0f
+msgid "bool"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:61 bcf3580b34114b5cb9e544d4e51ca5a6
+msgid ""
+":ref:`visible<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"visible>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:64 b094b22f7a9f4c3585e7407befb79bff
+msgid ""
+":ref:`setVisible<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_visible>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:67 ae198d7e14ca47f891fc8be479d4b4ff
+msgid ""
+":ref:`minimized<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"minimized>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:70 01b4146577f84052b2d02349330867c8
+msgid ""
+":ref:`setMinimized<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_minimized>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:73 ff6f6391658e4d14b23947a90c3cf3f6
+msgid ""
+":ref:`maximized<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"maximized>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:76 8310c1e659854c298843d3af0f86d738
+msgid ""
+":ref:`setMaximized<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_maximized>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:78
+#: ../../root/user_man/cpp/application.rst:114 0ff997874ed347acb5827143d5dae923
+#: d45ac6fb98f641e0b64fcd6735d46217
+msgid "Size"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:79 626bf7abeadf47fdb13318841907b0cb
+msgid ":ref:`size<d14uikit-reference-cpp-ui_objects-application-isntm-size>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:82 f50b710664334621b04b562909dab870
+msgid ""
+":ref:`setSize<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_size>` (const Size& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:85 3e8f1151dbbb4cfbaa018979519a16cb
+msgid ":ref:`width<d14uikit-reference-cpp-ui_objects-application-isntm-width>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:88 75ad3be12330423e9e720f16e93431c5
+msgid ""
+":ref:`setWidth<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_width>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:91 86bd89b8e62b400fad9d5002ebd229d9
+msgid ""
+":ref:`height<d14uikit-reference-cpp-ui_objects-application-isntm-height>`"
+" ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:94 73ded8c7c82d4c5e91e8ce47d1ca3f61
+msgid ""
+":ref:`setHeight<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_height>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:96 c7ce785007c44ab0b52bde93f1fc5c72
+msgid "Point"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:97 19a169fdb39848f7bdc09d7aa65b35de
+msgid ""
+":ref:`position<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"position>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:100 84831d96a5664622878e7efb1a564e11
+msgid ""
+":ref:`setPosition<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_position>` (const Point& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:103 ca63cd1962114b64879127f802bcf0a7
+msgid ":ref:`x<d14uikit-reference-cpp-ui_objects-application-isntm-x>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:106 7ac96ed9812047ce90b0a2dd620e62d2
+msgid ""
+":ref:`setX<d14uikit-reference-cpp-ui_objects-application-isntm-set_x>` "
+"(int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:109 e793e335f8ae486fb42be0ab9b5cb75b
+msgid ":ref:`y<d14uikit-reference-cpp-ui_objects-application-isntm-y>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:112 3fb15859e815421496ef3a6637e240e0
+msgid ""
+":ref:`setY<d14uikit-reference-cpp-ui_objects-application-isntm-set_y>` "
+"(int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:115 543451dde1cb41ac8222c80cb9fb7f32
+msgid ""
+":ref:`minSize<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"min_size>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:118 9328e46aebd54512b9c24fc50afb4aac
+msgid ""
+":ref:`setMinSize<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_min_size>` (const Size& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:121 e3f6cc67116f4a4abc943f7be6aad3f4
+msgid ""
+":ref:`minWidth<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"min_width>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:124 f7d6542e95884171b911bed0b24016f3
+msgid ""
+":ref:`setMinWidth<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_min_width>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:127 0290456f84f843338a6456bb106572b9
+msgid ""
+":ref:`minHeight<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"min_height>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:130 9bfa0084dca7414ca492ed3979be11eb
+msgid ""
+":ref:`setMinHeight<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_min_height>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:133 09d54017853e49f78a9c3b38f606d312
+msgid ""
+":ref:`resizable<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"resizable>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:136 9be873de15e24fb788f54c64bc649a8e
+msgid ""
+":ref:`setResizable<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_resizable>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:139 afe88a76464948c3af3f1559530e2c39
+msgid ""
+":ref:`fullscreen<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"fullscreen>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:142 9508e2093dfd4c43865ed604e4073fbb
+msgid ""
+":ref:`setFullscreen<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_fullscreen>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:145 7073284157b543989868b778a0d6cd3d
+msgid ":ref:`fps<d14uikit-reference-cpp-ui_objects-application-isntm-fps>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:147 3a7f56ead2174210a6435946da6e5055
+msgid "std::unique_ptr<Image>"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:148 da2349047dd64c0ab2e0892383a7bb20
+msgid ""
+":ref:`capture<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"capture>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:150 94604031efbc423581e9f3bcd6401bbf
+msgid "TextAntialiasMode"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:151 c103ca5f291d4f6fb099c2b6b9660df3
+msgid ""
+":ref:`textAntialiasMode<d14uikit-reference-cpp-ui_objects-application-"
+"isntm-text_antialias_mode>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:154 2d798b9634094c84bdfdd58a61b171d4
+msgid ""
+":ref:`setTextAntialiasMode<d14uikit-reference-cpp-ui_objects-application-"
+"isntm-set_text_antialias_mode>` (TextAntialiasMode mode)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:156 7f77c0d506b74ef88cead6cb1e047075
+msgid "RenderingMode"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:157 ffea35892ed246458a42f18ea5516411
+msgid ""
+":ref:`renderingMode<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"rendering_mode>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:160 2e43d5b45e1d47269ee1b85c20c6d6a0
+msgid ""
+":ref:`setRenderingMode<d14uikit-reference-cpp-ui_objects-application-"
+"isntm-set_rendering_mode>` (RenderingMode mode)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:163 55122284fc7a464e90c7b3b532bac13e
+msgid ""
+":ref:`animCount<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"anim_count>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:166 dd65916534044f7eb0e783afbce8cd85
+msgid ""
+":ref:`animState<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"anim_state>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:169 a7e50bbea88d496697440b0a3658bfbe
+msgid ""
+":ref:`setAnimState<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_anim_state>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:171 8b10f245ba854cd3afc325f765aa4ff0
+msgid "Cursor*"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:172 d1187db8a906418d8941e541b6839514
+msgid ""
+":ref:`cursor<d14uikit-reference-cpp-ui_objects-application-isntm-cursor>`"
+" ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:174
+#: ../../root/user_man/cpp/application.rst:192 3b7e260ca2d246499b4cbf28ec7f308e
+#: c25a36dc74d24f6ab7e3f88902ec6817
+msgid "const std::wstring&"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:175 b2149a1ca993451c805da6a810684300
+msgid ""
+":ref:`themeMode<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"theme_mode>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:178 626ee6ccbb054023a94f5b870c2073e0
+msgid ""
+":ref:`setThemeMode<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_theme_mode>` (const std::wstring& name)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:180 29cd7bca683149ca82ff5185b1d55625
+msgid "Color"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:181 b144ab0e1d0e40c79cfcbcf930933e5b
+msgid ""
+":ref:`themeColor<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"theme_color>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:184 95235951f98d4c00b9baa0dd39d4ec66
+msgid ""
+":ref:`setThemeColor<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_theme_color>` (const Color& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:187 7910c891469c43b1b1bb9128628524a2
+msgid ""
+":ref:`useSystemTheme<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"use_system_theme>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:190 42e9163cb02c473bb557c4ecee2b97cc
+msgid ""
+":ref:`setUseSystemTheme<d14uikit-reference-cpp-ui_objects-application-"
+"isntm-set_use_system_theme>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:193 b505146fc1394976949a374bfa5b982f
+msgid ""
+":ref:`langLocale<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"lang_locale>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:196 e7a5d8f7b5c34cebb834d9b6ad20fc25
+msgid ""
+":ref:`setLangLocale<d14uikit-reference-cpp-ui_objects-application-isntm-"
+"set_lang_locale>` (const std::wstring& name)"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:200 0038f707ff464148b4dffcea59bb5d42
+msgid "Remarks"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:202 9d5a6ba1944242d8b34e6acf249d19f0
+msgid ""
+"For a typical D14UIKit application, creating an ``Application`` instance "
+"is the first necessary step. When drafting a brand new D14UIKit based GUI"
+" project, the following template can be used:"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:221 2fd0d4bee8134dd9a7d01fe7098886c0
+msgid "Details"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:225 483d61543c5948c6ab14e7de8247fa5f
+msgid ""
+"**explicit Application(const std::wstring& name = L\"D14UIKit\", const "
+"std::optional<float>& dpi = std::nullopt)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:227 c1b9970f17bb446e8be00164f3ab0e32
+msgid "**Params**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:229 9df39f0a59fd48548982f42fb6177f2d
+msgid "``name``"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:231 db51de4dcfb4486780d5293cee6222ba
+msgid "Type: **const std::wstring&**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:233 d26da4b55b4f47d1a6a9978e98d4bfef
+msgid "Default Value: **L\"D14UIKit\"**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:235 eb6a10a9348d4e648fb7b6615091bb9b
+msgid ""
+"The name of the application, which is also used as the name of the "
+"underlying Win32 window. Therefore, it is also the text displayed for the"
+" program in the taskbar thumbnail, task manager and other system "
+"interfaces."
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:237 d3bcae7a1b49470589acd78b9ff4398b
+msgid "``dpi``"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:239 9eb8ab11c5f64164b8da71c73027e8d8
+msgid "Type: **const std::optional<float>&**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:241 b96e53f55425497cbfaa6093cf00b753
+msgid "Default Value: **std::nullopt**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:243 d64906c431db45ab88d78971e0458a51
+msgid ""
+"The DPI of the application. This can be any positive value within "
+"``float`` range, or empty to follow the system DPI. The typical DPI "
+"settings are as follows:"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:249 dc9c1c09555b490ba7af3deebf1f0965
+msgid "Display Scale"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:250 5c16e605dba5412ba580c0b0fd5218a4
+msgid "DPI value"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:251 0c488bae0597482c94fa1bd4db9bfae5
+msgid "100%"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:252 9684c7fdc25847ac9d970bc54629ec0b
+msgid "96 dpi"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:253 c88766cf466a4bdeba9dfcdcaed55734
+msgid "150%"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:254 353a026437a742a48b916bd9d2b2b7e6
+msgid "144 dpi"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:255 673e88eb6ae64708aa0495fc70e55ec9
+msgid "200%"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:256 5c584744fc744ecfa98354fbe8082c38
+msgid "192 dpi"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:258 085bfb9fa4f74a23b3f284e7da4c2f80
+#, python-format
+msgid ""
+"A DPI value that is not a multiple of 96 dpi may cause blurry display. "
+"The reason why we use \"may\" here is that it also depends on the actual "
+"size of the UI object. For example: at 125% scaling (i.e. 120 dpi), "
+"rendering a 100x100 dip image is based on a 125x125 px offscreen texture;"
+" however, for a 90x90 dip image, the texture size in theory is "
+"112.5x112.5 px, and the actual size must be 112/113 px, which causes the "
+"image scaled and blurred."
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:260 be75005b2dd74193b4dba4c229dff1ac
+msgid ""
+"The tutorial :ref:`d14uikit-tutorials-beginner-dpi_adaption` gives a "
+"brief introduction to DPI."
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:264 4ad48bd896bd42dc919bfd3e5da8366a
+msgid "**static Application* app()**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:266 8ec4a9800aab492e87e57f71ca0dab32
+msgid "Returns a pointer to the global ``Application`` instance."
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:268 bcdee8cdc16c41b0a8e8c7474633a9af
+msgid "**Notes**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:270 9e08dbf3865f4562b326c7c391b56dc6
+msgid ""
+"This method is often used in callback functions when no ``app`` can be "
+"captured:"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:280 b649312337e14a5184ead27c3a714998
+msgid ""
+"The macro ``D14_onMouseButtonRelease`` expands to a lambda. If you do not"
+" want to use the static ``Application::app()``, it is necessary to make "
+"the lambda capture an ``app`` instance:"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:294 bf7d7c0c955447ba88ef322795d4bc5d
+msgid "**int dpi() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:298 92b1397d6265417b8fa371579f7aa057
+msgid "**BitmapInterpMode bitmapInterpMode() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:302 e0b78a3cb1144c1aaf7e79f61e20e130
+msgid "**void setBitmapInterpMode(BitmapInterpMode mode)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:306 c3b09c60dac94cc08699616eb715f410
+msgid "**int run() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:310 e2c845a88245405fac3a3a3e7e8d3837
+msgid "**void exit() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:314 45037a2ac740492da56cf3973ea89767
+msgid "**bool visible() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:318 ac02b64fa36141b4a7027ae9269faced
+msgid "**void setVisible(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:322 20066a42524c48c6b95ed72f0c04bbcf
+msgid "**bool minimized() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:326 c931f78bd4d94d6882fef4be21de4274
+msgid "**void setMinimized(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:330 63f0e7e760e14d5e81fc5d3c24db84b8
+msgid "**bool maximized() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:334 cd0f7750025c43588906a5f409bc546f
+msgid "**void setMaximized(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:338 174c55f8f41c4284b79a1a270156c9a5
+msgid "**Size size() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:342 8297758b11a245b3bfa6ef38b4cb63a1
+msgid "**void setSize(const Size& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:346 5f8c4578e22d42ec9466db40cba7f42b
+msgid "**int width() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:350 c51ced58c65e45439efb88c3342ccd44
+msgid "**void setWidth(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:354 b8d13b95dad34e5ba85d50389254c35c
+msgid "**int height() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:358 74e24120a9614e079d29af17a6564dd2
+msgid "**void setHeight(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:362 26662abd100246278db3f8bcbb568d62
+msgid "**Point position() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:366 c957299451364a91878ee4af9cf3d256
+msgid "**void setPosition(const Point& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:370 928115dbbc644c96bdd1a44f5a86c419
+msgid "**int x() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:374 6a1dca4b021b4f32a08cda1d8105c5b8
+msgid "**void setX(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:378 ce0315f9b3934af393b95da6beea9203
+msgid "**int y() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:382 959979a65bb74d3db2a3edc73432fc68
+msgid "**void setY(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:386 813492c9e4314024862794d1f0052881
+msgid "**Size minSize() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:390 cd2084a4c87943fbbd35cd739634aab0
+msgid "**void setMinSize(const Size& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:394 b80512302cef4dd2a7ee19ae4d0263d8
+msgid "**int minWidth() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:398 2bc9b36990574c038232a99353e754f0
+msgid "**void setMinWidth(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:402 f3e55f66b11f42318e39834404d16e42
+msgid "**int minHeight() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:406 6d92b71d3530441f8fb86fbc71dc46f7
+msgid "**void setMinHeight(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:410 8fee8f584b7b4e32b45d14a703f858f5
+msgid "**bool resizable() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:414 9e15c8f8bef64a58b0c8201f6dcf0b5f
+msgid "**void setResizable(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:418 29dde85882114a2e8c4dc2aeca49741b
+msgid "**bool fullscreen() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:422 cabef78f7fca42ffaa29bf6cdb990a7c
+msgid "**void setFullscreen(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:426 8ff76fef32e54e649e9f57568974309b
+msgid "**int fps() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:430 07b930a850954a78b3839a40a4eb10e0
+msgid "**std::unique_ptr<Image> capture() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:434 88945aaf0063482587a242ede70ff862
+msgid "**TextAntialiasMode textAntialiasMode() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:438 1f946dafdaaf4459a4a92387a188cb44
+msgid "**void setTextAntialiasMode(TextAntialiasMode mode)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:442 64c663f0dde244acb17021bc63239aef
+msgid "**RenderingMode renderingMode() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:446 f632f9a377f545138038490f0441e51c
+msgid "**void setRenderingMode(RenderingMode mode)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:450 231553d07ba8429888afa39d632a804a
+msgid "**int animCount() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:454 8451e4ad5b344b98a1c48e73a2006f5f
+msgid "**bool animState() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:458 784171f22b0f4c6fa05e6aa6bb465a5d
+msgid "**void setAnimState(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:462 beb0f32cdf2e484ab802b7c57b782601
+msgid "**Cursor* cursor() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:466 972d2f708bdb47eeb0a3b0a9f0c43e45
+msgid "**const std::wstring& themeMode() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:470 5d8c9cd0d1cc442c8204d55acec18ee5
+msgid "**void setThemeMode(const std::wstring& name)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:474 56f2b0c191d3453ea7b26f4a4ef7dc25
+msgid "**Color themeColor() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:478 e6baec00d5eb47ae9b0d5fbe13d5cf26
+msgid "**void setThemeColor(const Color& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:482 6e8ecc7489334af5b41bf7228b8a75dc
+msgid "**bool useSystemTheme() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:486 ec0ac2ef2fe74d4a8c43da59dd7881fa
+msgid "**void setUseSystemTheme(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:490 e2960691b3cc43e6a256f9935f4b9a9a
+msgid "**const std::wstring& langLocale() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/application.rst:494 2302c9c187404d5e9512c93dd65379bd
+msgid "**void setLangLocale(const std::wstring& name)**"
+msgstr ""
+

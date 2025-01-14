@@ -1,0 +1,1440 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-01-14 16:56+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:4
+#: 476af5a0e85b4e608417f91e0279d923
+msgid "Panel"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:7
+#: 248e4b22aeca47b69ce4e8b39fa16330
+msgid "Overview"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:13
+#: c52924c3d0bb411eaf80cd53c2ade581
+msgid "Header"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:14
+#: 7ad25789656140c5aab1101da804cb17
+msgid "Panel.h"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:15
+#: c909dea3001a4b0b8abad1039c112769
+msgid "Inherits"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:16
+#: 5589466dbe8f44cdb2fb7fb5635c7aa1
+msgid "NonCopyable"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:18
+#: e911a5f337e145b1b3abd970d2a7816b
+msgid ""
+"``Panel`` is the most derived UI object in D14UIKit. It represents a "
+"rectangular area on the screen, where we can draw an image or place other"
+" UI objects (as children)."
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:21
+#: 294d7a866a3041678cce778091463f60
+msgid "Constructors"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:26
+#: bebb2357e3fe45829e8a27417708b3ad
+msgid ":ref:`Panel<d14uikit-reference-cpp-ui_objects-panel-ctor-1>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:29
+#: 5dc98bf7b3b4410692557bbff3995571
+msgid "Instance Methods"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:35
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:38
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:44
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:161
+#: 0bfbafe121034696b7a53d8e4b21b529 7e476ba5e2484bf6a2020599e121830e
+#: 878208fba44f46aa9497f82197aea09b 90a5e1f0f6d14a848924d1711aa59870
+msgid "bool"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:36
+#: bb2ed3a6408e45288fb40e1f64dedb2f
+msgid ":ref:`release<d14uikit-reference-cpp-ui_objects-panel-isntm-release>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:39
+#: 571ab4583b334ec9895ac447868e4417
+msgid ":ref:`visible<d14uikit-reference-cpp-ui_objects-panel-isntm-visible>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:40
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:46
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:52
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:58
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:64
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:70
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:73
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:79
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:82
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:88
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:91
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:97
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:103
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:109
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:115
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:121
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:127
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:133
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:139
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:145
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:151
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:157
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:163
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:169
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:175
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:181
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:187
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:202
+#: 0bb963863c1646e1b514ef9ff29cfbd2 125a72826bb94da8b5e12261da716cfe
+#: 17e9ff7c1040479a896388bcdaefec2b 1b53b19cc27f4a6ea51cb4e3d10f707a
+#: 1df9888151e644afb26003732d30be2e 22948500d7f34e87b5b51eea8adf282b
+#: 23a6e68013eb4e2fb2452e5a628cafd4 41f8fd9829d34b86bf308013de64ec40
+#: 46b71a8744a247ea968e1868f020dafa 685e86aa7db9471aa64b30aaf532e9cf
+#: 75b4e5f6930040d696ceacfdca36bcb4 77f9d6492a5e40679ef8f190016c20c4
+#: 7ca2021050b34bd1b4f5798b9cb491f4 83e9d9a000e64f39a30ace1ea1187930
+#: 8f3f07001a9e4c15b4f657ce774158fb 934a5e0ebdea4b20a275149a1731048e
+#: 99eb89fd74cd425bafd1efc6c581490a 9d00e049b6ec4a2190680874b84cdf61
+#: 9d8b95dbe28a46db8d7bf99eebba4bc8 9f3b9f326220492d955a87100762923b
+#: b240913ae61e4188a106cbfa52df283d c6ea1998616d4353ba029e422f78ac79
+#: c80e9c59afd34f7aa9c03c9515c1f449 e94a6e027c8a42d098c931e7d938ab37
+#: e96ff263f9364296a51ceeecf5eae419 f544d5ddd3a243eeaf78db1a87f19e3f
+#: f9dc39745c934e00998b704207c6e52b fd33c367021a43cb90bb29a8e01e7b48
+msgid "const"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:41
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:47
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:53
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:59
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:65
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:74
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:83
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:92
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:98
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:104
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:110
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:116
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:122
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:128
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:134
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:140
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:146
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:152
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:158
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:164
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:170
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:176
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:182
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:188
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:191
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:194
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:197
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:203
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:206
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:209
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:212
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:215
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:218
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:221
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:224
+#: 0a28f77a83924e48b7763ef1a358818f 0d921ef4099444f1a05fe3037b7389df
+#: 0fa4b2f7a7024200a8bbfa95c2f70729 16b78540cc614147b37377d61174265a
+#: 2007f1551c034687ac92d81792f636b1 22f5dd6a04904da3bc570258e204997c
+#: 26319fb816c3488e936c48ca4a50b11b 298ad01d32b9498f97ff54ad1a6f3897
+#: 2eb4ad080d6f46068b777b232c2abed7 3e684f3cce5a4bef97346dd91915d6e9
+#: 43777e1c563a4e979746a9094db1e093 4b5341bc042f4dfdb85ec919b958b247
+#: 4d62eddf97e3491488729293f8a0f109 5ab59f92dc364392b2adb7ca1520d0f2
+#: 5aef677d6cc94f6cbcb1e2144aeba04c 5d6c14e9c362461b934a4e5fef499f28
+#: 67c11b871d8b4585b8adc9f17d45c7cb 68c65c214d7f4caa8a98f2b15f3370f2
+#: 697e58ff308b496d9b251860fe106118 78a821aa14684c698058d0f9e1d0ce4f
+#: 7b55b01a8914484a9c2db779169f1ae4 7f5970bd92ec4cbe98bf14fc90e758f7
+#: 8287fa2a71bc489894063539d73f8cd6 84084bf3dcc1480eb22c03a800fad3d5
+#: 879f250ae3d24e8bb6636f6fc3c2da5d 939a13a6730f4728a913a54899783cbe
+#: 9839a82f466a4036b62c5267bc4d8f49 a92ebbc325a24dad870f34670d362de2
+#: c023de3df09b402a86ad14f83d223f9c c3b132baea004627ad01c0c12362c172
+#: ce23437211184462b29871ae80edd160 cf333ecf0b8847ed87b8a9a3dfe2636d
+#: d949899153a84ab8a33c4d4c5a719141 f014802ec27a421693400260acf00722
+#: fad55596188b4722bc23aac805cb6c20
+msgid "void"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:42
+#: d48f28e4081743698d11f10385f92363
+msgid ""
+":ref:`setVisible<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_visible>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:45
+#: 62ed70a87ef54576a9b2299b8796ca9e
+msgid ":ref:`enabled<d14uikit-reference-cpp-ui_objects-panel-isntm-enabled>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:48
+#: a1ec1186abec420fb5377009d83a80e3
+msgid ""
+":ref:`setEnabled<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_enabled>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:50
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:95
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:113
+#: 227d0e4a04a24d94932f06ea4e4d6232 568c2882fa174f72a907e147faef0e9a
+#: b0420d25fe2e4efc9c32a824f4649284
+msgid "Size"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:51
+#: 05426d29604e4a33ac9b2ec9a5442a0f
+msgid ":ref:`size<d14uikit-reference-cpp-ui_objects-panel-isntm-size>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:54
+#: db788ef628094a8f91989caa6c43d4a1
+msgid ""
+":ref:`setSize<d14uikit-reference-cpp-ui_objects-panel-isntm-set_size>` "
+"(const Size& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:56
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:62
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:77
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:80
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:86
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:89
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:101
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:107
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:119
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:125
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:143
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:185
+#: 046936416e734883b616c4e5ce86e17d 0dc804b0aed54d30b6b41a0eaef8886a
+#: 16c4db2ade4a41afba9d80429c5aff3c 1cd63e9590a744fd827d90b8db833ecb
+#: 2e9411dd71fc41aeb6f59fa943bfa971 6dda40345e6947ff865d7fa41dc56691
+#: 88788d16f7cf43c2b601c56017066c9e 9ac8bebc2f2746799cbc49817edbff77
+#: b53298aaaf6a48b99c279cf893425389 dea2147d8780410cabdd1d707c8961c7
+#: f003db6d2927429f83f398748a5039a1 f7bdbc67cc484b458c7cc6e79f1e8416
+msgid "int"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:57
+#: 2f42959788c443a1966fbcc1b3526060
+msgid ":ref:`width<d14uikit-reference-cpp-ui_objects-panel-isntm-width>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:60
+#: ca6b1bea5c1240cd9d23e29978a7cac2
+msgid ""
+":ref:`setWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-set_width>` "
+"(int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:63
+#: ea5fdd0feac34f98a1ac327a8a539f64
+msgid ":ref:`height<d14uikit-reference-cpp-ui_objects-panel-isntm-height>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:66
+#: 58305a5c260541be80a5caa160e38065
+msgid ""
+":ref:`setHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_height>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:68
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:71
+#: 6ee0cab8f0d3478faef0005f6d9d16ac 7d853671d4b64a86ac890b581c06ab56
+msgid "Point"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:69
+#: 66bcdeeda2344cc8ad24e6a8395a41eb
+msgid ":ref:`position<d14uikit-reference-cpp-ui_objects-panel-isntm-position>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:72
+#: 6b27941c1f394c64af91049e7e62e94b
+msgid ""
+":ref:`absPosition<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"abs_position>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:75
+#: 280100752cad49409407bf5c3c0c65c4
+msgid ""
+":ref:`setPosition<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_position>` (const Point& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:78
+#: 305275a3f7e84c2eb535560921371951
+msgid ":ref:`x<d14uikit-reference-cpp-ui_objects-panel-isntm-x>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:81
+#: 1d8128cefa1c4e32a6bcdc424a08d40b
+msgid ":ref:`absX<d14uikit-reference-cpp-ui_objects-panel-isntm-abs_x>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:84
+#: cc7f0fd7563a46248e51e26975ca511c
+msgid ""
+":ref:`setX<d14uikit-reference-cpp-ui_objects-panel-isntm-set_x>` (int "
+"value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:87
+#: 05cfe99785d546f291ba2ffa1598e674
+msgid ":ref:`y<d14uikit-reference-cpp-ui_objects-panel-isntm-y>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:90
+#: 13c44549d3a94e64811cfb4e775606a0
+msgid ":ref:`absY<d14uikit-reference-cpp-ui_objects-panel-isntm-abs_y>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:93
+#: 0395ff94e1f145d6a7fea5b39c05ff44
+msgid ""
+":ref:`setY<d14uikit-reference-cpp-ui_objects-panel-isntm-set_y>` (int "
+"value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:96
+#: d2f85eb868aa4e9c9b0fa04360b8fa46
+msgid ":ref:`minSize<d14uikit-reference-cpp-ui_objects-panel-isntm-min_size>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:99
+#: 1bb5275996cf4d8b903b80aad05f60be
+msgid ""
+":ref:`setMinSize<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_min_size>` (const Size& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:102
+#: 218e1f55d1e9455083cfbb3ab086381d
+msgid ""
+":ref:`minWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-min_width>` "
+"()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:105
+#: b61fbf5368c24462924469e2d5c5fe00
+msgid ""
+":ref:`setMinWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_min_width>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:108
+#: 77c1418d30294eb7b1ef67f95d32bf83
+msgid ""
+":ref:`minHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"min_height>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:111
+#: b725fcba09534d60baa5ed842750961c
+msgid ""
+":ref:`setMinHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_min_height>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:114
+#: f79d9c7f35e141d6931fd43bea627374
+msgid ":ref:`maxSize<d14uikit-reference-cpp-ui_objects-panel-isntm-max_size>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:117
+#: ebf917bb526145c1bc47686fed3c3f0e
+msgid ""
+":ref:`setMaxSize<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_max_size>` (const Size& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:120
+#: 01914f51fc54464aa52970b8533edfb1
+msgid ""
+":ref:`maxWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-max_width>` "
+"()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:123
+#: 85eae5ac78414e7eacea00994c8fbccb
+msgid ""
+":ref:`setMaxWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_max_width>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:126
+#: 3412e2be8188450b8ab11196233674c1
+msgid ""
+":ref:`maxHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"max_height>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:129
+#: ca59cfc749624d7daa7bbf1408731c4b
+msgid ""
+":ref:`setMaxHeight<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_max_height>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:131
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:149
+#: 3056dffe72fe42d29e715a62c50be88a 7238e54710b246ae869009bf28814077
+msgid "Color"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:132
+#: 7a0ee5f42f654443a3b3a58964c27686
+msgid ":ref:`color<d14uikit-reference-cpp-ui_objects-panel-isntm-color>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:135
+#: 9363764a26024561a5fcbf1a554a87fb
+msgid ""
+":ref:`setColor<d14uikit-reference-cpp-ui_objects-panel-isntm-set_color>` "
+"(const Color& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:137
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:155
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:173
+#: afaf3a13e84b4620ba2adb057092b855 e51733d12ca34e88a1bfca01d551ee3e
+#: f855f4ed42d14957b18c30a447912259
+msgid "float"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:138
+#: 23eea30176cf4dfea3d5ba97ceb3e82d
+msgid ":ref:`opacity<d14uikit-reference-cpp-ui_objects-panel-isntm-opacity>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:141
+#: 088c08463a14410f9f5c2301cd7ef6da
+msgid ""
+":ref:`setOpacity<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_opacity>` (float value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:144
+#: db9a9ad8668e4d6f8e6818110061310b
+msgid ""
+":ref:`outlineWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"outline_width>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:147
+#: e011333c7bfd4b109998d28e1489d612
+msgid ""
+":ref:`setOutlineWidth<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_outline_width>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:150
+#: aa00a22a1e1542bc81efc53eb434f402
+msgid ""
+":ref:`outlineColor<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"outline_color>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:153
+#: 0d13d949c1cd48debfc30a654338c84a
+msgid ""
+":ref:`setOutlineColor<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_outline_color>` (const Color& value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:156
+#: 77c68104739d4664b81fa06fdf02724d
+msgid ""
+":ref:`outlineOpacity<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"outline_opacity>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:159
+#: f15a8d2d739d4e478c8b9c2f9a8d851c
+msgid ""
+":ref:`setOutlineOpacity<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_outline_opacity>` (float value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:162
+#: 2325bb2d9d0b41c99fbd426893c3eab8
+msgid ""
+":ref:`animState<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"anim_state>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:165
+#: 7966b6cc11e147fb85cbb5972b9ef1b0
+msgid ""
+":ref:`setAnimState<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_anim_state>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:167
+#: df24519e0b6744f4acdbe583119af6ea
+msgid "Image*"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:168
+#: 701ae1dea76b4b7ca39476bb8e278c14
+msgid ":ref:`image<d14uikit-reference-cpp-ui_objects-panel-isntm-image>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:171
+#: 911c7e931c194ace9b172b8f68d9cef2
+msgid ""
+":ref:`setImage<d14uikit-reference-cpp-ui_objects-panel-isntm-set_image>` "
+"(Image* image)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:174
+#: 791b349882784e179821135d8f2f2279
+msgid ""
+":ref:`bitmapOpacity<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"bitmap_opacity>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:177
+#: 216720ab691543a08c06ea14666aaed6
+msgid ""
+":ref:`setBitmapOpacity<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_bitmap_opacity>` (float value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:179
+#: 028e7849d65e400cb3585415d2e7795d
+msgid "BitmapInterpMode"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:180
+#: f205556a2ec54999990273ac7969fb98
+msgid ""
+":ref:`bitmapInterpMode<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"bitmap_interp_mode>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:183
+#: 5ebcf66370f142e8b5a24b449d153213
+msgid ""
+":ref:`setBitmapInterpMode<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_bitmap_interp_mode>` (BitmapInterpMode mode)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:186
+#: 1b95909d9e6b4425b11f2a81c1690142
+msgid ""
+":ref:`roundRadius<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"round_radius>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:189
+#: 73031442fc5d4bdf8db055c6fc9869c9
+msgid ""
+":ref:`setRoundRadius<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_round_radius>` (int value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:192
+#: e46073e590c5473cbd315b3df39e12ce
+msgid ""
+":ref:`setGlobal<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_global>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:195
+#: 9afb5d623cd3458d93baf8416d9e33a2
+msgid ""
+":ref:`setPinned<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_pinned>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:198
+#: 2fe6c3064e9049b4a45e1833544a68e9
+msgid ""
+":ref:`setFocused<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_focused>` (bool value)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:200
+#: 7b2f5f08c6db407e94e65b0ea86aad2a
+msgid "Panel*"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:201
+#: bae6fe7a00b1404c91337813aa252477
+msgid ":ref:`parent<d14uikit-reference-cpp-ui_objects-panel-isntm-parent>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:204
+#: 3795e8cbd9d848469f8c32915ee0ed7d
+msgid ""
+":ref:`setParent<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"set_parent>` (Panel* uiobj)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:207
+#: 95921612f14a4ee78e95c5dba35a0b5f
+msgid ""
+":ref:`addChild<d14uikit-reference-cpp-ui_objects-panel-isntm-add_child>` "
+"(Panel* uiobj)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:210
+#: 5de5194a36f843358e0ecc2915ff12d4
+msgid ""
+":ref:`removeChild<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"remove_child>` (Panel* uiobj)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:213
+#: ae929e35d00745cf81a5d09d5d327e01
+msgid ""
+":ref:`pinChild<d14uikit-reference-cpp-ui_objects-panel-isntm-pin_child>` "
+"(Panel* uiobj)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:216
+#: 3691cb9ac63243f0ba300b9044d0a78d
+msgid ""
+":ref:`unpinChild<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"unpin_child>` (Panel* uiobj)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:219
+#: eb9e81bf1aec404790da342633ae0c3d
+msgid ""
+":ref:`moveTopmost<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"move_topmost>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:222
+#: 53e3b6c48b274602b3f04a50fd7c0156
+msgid ""
+":ref:`moveAbove<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"move_above>` (Panel* uiobj)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:225
+#: 853f2801204a4d7f88064148d79d5ada
+msgid ""
+":ref:`moveBelow<d14uikit-reference-cpp-ui_objects-panel-isntm-"
+"move_below>` (Panel* uiobj)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:229
+#: 614fe48293504a30a50fd02fbc24f232
+msgid "Callback Functions"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:235
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:237
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:239
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:241
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:243
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:245
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:247
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:249
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:251
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:253
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:255
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:257
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:259
+#: 066993fe61104f50ac05e74df37f4d69 06aca81538d04fa594479bf1988fd9d2
+#: 0b8d3da9b0984d26804bb8a1673038c2 3d3f332ff72f4fff8af1786dce77757b
+#: 563b0c1c7d6440e38a65e414f19c6a41 651b6284766a47249d8934806b239876
+#: 68ddf8f8a30c478089830b9c57aace8f 89af6bf19dcb4a0d87df03c1f6a51e75
+#: 984c08d3307947298946306ece5c470e 9b97e640d92548d3bf09a1b3b6044372
+#: cac0137e04e84c7faea90f1f3be66f3e eb089702af2d488a9d96fc634e3dfa84
+#: f6bfe63276c64ccfacfde3ba9685d72c
+msgid "virtual void"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:236
+#: c832f2ab3e584ca8aa22722f04805a64
+msgid ""
+":ref:`onUpdate<d14uikit-reference-cpp-ui_objects-panel-virtm-on_update>` "
+"()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:238
+#: b57b9c50ff1f4fb8aea624e627a1d1cc
+msgid ""
+":ref:`onSize<d14uikit-reference-cpp-ui_objects-panel-virtm-on_size>` "
+"(SizeEvent* event)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:240
+#: 08cdcff558bf45029f16a1826837c915
+msgid ""
+":ref:`onMove<d14uikit-reference-cpp-ui_objects-panel-virtm-on_move>` "
+"(MoveEvent* event)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:242
+#: 8a1b52295ae24407ba011bd881d577d1
+msgid ""
+":ref:`onChangeTheme<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_change_theme>` (const std::wstring& name)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:244
+#: 059249800c5445e1908c084849eaf361
+msgid ""
+":ref:`onChangeLangLocale<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_change_lang_locale>` (const std::wstring& name)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:246
+#: 2bd1230cfe2746b09a9801ea6ab91d59
+msgid ""
+":ref:`onGetFocus<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_get_focus>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:248
+#: 5afe818be6c8408eb8bfa7913f4fdba3
+msgid ""
+":ref:`onLoseFocus<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_lose_focus>` ()"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:250
+#: 0b7cb3a9b8e64ac6aea5075674f88020
+msgid ""
+":ref:`onMouseEnter<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_mouse_enter>` (MouseMoveEvent* event)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:252
+#: 76331bfdda624297ac52484c3f757d51
+msgid ""
+":ref:`onMouseMove<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_mouse_move>` (MouseMoveEvent* event)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:254
+#: 35097f3f47d24c768dcdf604bb9c6133
+msgid ""
+":ref:`onMouseLeave<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_mouse_leave>` (MouseMoveEvent* event)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:256
+#: 973b5346274f4418b88b6d28d64e9c54
+msgid ""
+":ref:`onMouseButton<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_mouse_button>` (MouseButtonEvent* event)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:258
+#: 21291dc578934308a3bb19f6443b8d29
+msgid ""
+":ref:`onMouseWheel<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_mouse_wheel>` (MouseWheelEvent* event)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:260
+#: 678addddb2d04bf0becc4281598d6cbb
+msgid ""
+":ref:`onKeyboard<d14uikit-reference-cpp-ui_objects-panel-virtm-"
+"on_keyboard>` (KeyboardEvent* event)"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:263
+#: 0a667ba4faa04410aff528035db1d756
+msgid "Remarks"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:265
+#: 524d629aeca14707806fcb38d43477e9
+msgid "**Appearance**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:267
+#: cb82cec4b20d4cb6b45ab6b3d073dfa4
+msgid "The background of ``Panel`` can be a solid color:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:274
+#: adad4147f0634eda9d5c31347c6546a6
+msgid "or an image:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:281
+#: 32d22ba8232a49e5aab21e03261138d3
+msgid ""
+"We can set both a solid color and an image at the same time, and the "
+"image will be displayed on the solid color background, which is very "
+"useful for displaying an image with an Alpha channel. In addition to the "
+"background, we can also set the outline of ``Panel``:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:288
+#: a4f9c987b59546609a1572cb740de6dd
+msgid "The outline will be displayed on the image and solid color background."
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:290
+#: 391d5316348e4df1a32d88fd9f6b191a
+msgid "**Priority**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:292
+#: a027fd68be0e4a9a9ffb8948fb3bb133
+msgid "``Panel`` can be a global UI object:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:298
+#: a232a71134e44b17b32818aa9e09a2f7
+msgid "or a child object of another ``Panel``:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:304
+#: 9a14000003b844798eb6130a15b3c1be
+msgid ""
+"It is worth noting that global objects do not refer to the children of "
+"the main window, but rather the objects directly managed by the "
+"application. In general, the main window should be created as a global "
+"object. If you want a higher priority of a UI object than the main window"
+" (such as a dialog box), you should set it as a global object."
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:306
+#: 16d8d94be47549d69a06a1cc4cb1a0c7
+msgid ""
+"For objects at the same layer (all are global objects or children of "
+"another object), D14UIKit also supports different priorities. For "
+"example, to make ``a`` display above ``b``:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:316
+#: ce4c922c010a4789aa87628daaacd4f0
+msgid "or simply move it to the topmost:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:322
+#: da42f07cf62b4d27b19d4f5c33b503be
+msgid ""
+"In D14UIKit, a smaller value corresponds to a higher priority, so the "
+"topmost's priority is 0."
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:325
+#: 204c1859901347f285c627d7e234efb8
+msgid "Details"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:329
+#: 2fd17b5f8cd54a4aa864c7d31a9be3b9
+msgid "**Panel()**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:331
+#: 22a7a12edd2846e6a127f29d962c12fd
+msgid ""
+"Constructs a panel with size of (0,0) and position of (0,0), and a black "
+"transparent background and outline, and the lowest priority."
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:335
+#: eed68e20424944ccbc88368554086c15
+msgid "**bool release()**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:339
+#: 1d5a3ba1c6934177962163ec07272199
+msgid "**bool visible() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:343
+#: 1f7e87f757004421b30a080e2e8afb7d
+msgid "**void setVisible(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:347
+#: 3e30bce8f87445489d7c42c018460f88
+msgid "**bool enabled() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:351
+#: e622252bab1746d99fac2fb0c99d2b66
+msgid "**void setEnabled(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:355
+#: 18ab7a84c7cc45eb9f815cee76e578fd
+msgid "**Size size() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:359
+#: f5d4a3884568489c9c6d886796279a94
+msgid "**void setSize(const Size& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:363
+#: a7e36029695e4f59b7ae9f7aab96c15b
+msgid "**int width() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:367
+#: 9ab841279cc348f983b14d7638559e88
+msgid "**void setWidth(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:371
+#: 67843b69b3b24a3bb689f16908f910f8
+msgid "**int height() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:375
+#: 9753a1f354874516bd540ca6ad83872c
+msgid "**void setHeight(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:379
+#: cc2f462d877f4b8fb5a7624b9c4d5636
+msgid "**Point position() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:383
+#: 73c6af4e7e32474588d8500223ccd0e0
+msgid "**Point absPosition() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:387
+#: 7b47d0eb60fc4ac99666cd1e88b9275c
+msgid "**void setPosition(const Point& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:391
+#: 8ed02b58bc67468887bfa468244518ef
+msgid "**int x() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:395
+#: b15d71c3b75b4bfab2593ca780564740
+msgid "**int absX() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:399
+#: e4a878c32baf4bbdacbbd55717855640
+msgid "**void setX(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:403
+#: 9a204c6906ee4747bdcb450f74d9aa1b
+msgid "**int y() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:407
+#: 47abec01964243dcb5f84453fb7b9167
+msgid "**int absY() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:411
+#: 28a19375a1d648d1905752729500fa8d
+msgid "**void setY(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:415
+#: 7c98293c870b4af1b82a2cbe50191195
+msgid "**Size minSize() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:419
+#: dd52c9e325d541cfb987b7ce63a91eb9
+msgid "**void setMinSize(const Size& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:423
+#: 6e0a7e87f580445baa61f47a723e77bd
+msgid "**int minWidth() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:427
+#: 7319ab7ff2d64fd7873cfb5c7052eccc
+msgid "**void setMinWidth(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:431
+#: 6c373cc912ac4e83848164b380cf0847
+msgid "**int minHeight() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:435
+#: c62a099ac979483ca0fc84d6508a3feb
+msgid "**void setMinHeight(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:439
+#: 12f391b94ddd493bb5a1fd3456be6ddc
+msgid "**Size maxSize() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:443
+#: fc7f981993914e5ea1d1ae1d3a1defb8
+msgid "**void setMaxSize(const Size& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:447
+#: 738c9d2970df4eb1aeb1897bec28da86
+msgid "**int maxWidth() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:451
+#: a2645994dde34b1dadbfacc868b84c0c
+msgid "**void setMaxWidth(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:455
+#: acc77cac3c58436c9d618db0b3c0324f
+msgid "**int maxHeight() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:459
+#: 2d1d7161348a49d4b4bc266e8ba0672d
+msgid "**void setMaxHeight(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:463
+#: f524ccea72004a53b406ab1f7260410d
+msgid "**Color color() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:467
+#: 98c3bc12e594450ca7c591c48b1a312f
+msgid "**void setColor(const Color& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:471
+#: 65716e871f764868b7dab6eb55292cc8
+msgid "**float opacity() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:475
+#: 07049b75725a463c8302de27d66cdea5
+msgid "**void setOpacity(float value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:479
+#: b8bb89c9cd6640e8ac89f5e049f18068
+msgid "**int outlineWidth() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:483
+#: a565cfe0ac784253b120e89e57a08cea
+msgid "**void setOutlineWidth(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:487
+#: 9e7dfba217eb46f4897f2a4a1c490ce3
+msgid "**Color outlineColor() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:491
+#: 8f5fc08d43d14f918eddd6ff423441e0
+msgid "**void setOutlineColor(const Color& value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:495
+#: f772ebea2be74bf39805d2e104847bf4
+msgid "**float outlineOpacity() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:499
+#: f675d3ed3bbf450cb9f1a2285dc9a86b
+msgid "**void setOutlineOpacity(float value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:503
+#: 265b20b51b304a41ab22edf6cee56db2
+msgid "**bool animState() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:507
+#: 86c4014ee4cc4fb29c391640bf78f8cd
+msgid "**void setAnimState(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:511
+#: 400fe312fcfd48349a7e5ae1fded3b44
+msgid "**Image* image() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:515
+#: 803e5972affe454eb4aa2b48f4e2b0af
+msgid "**void setImage(Image* image)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:519
+#: dea70555c06c413fa5e15d60e6d97db9
+msgid "**float bitmapOpacity() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:523
+#: a5d73f9ae5fa4fa6a24270885796ce10
+msgid "**void setBitmapOpacity(float value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:527
+#: a6d9d303d93b4cdfada4d03e1d4158a5
+msgid "**BitmapInterpMode bitmapInterpMode() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:531
+#: 8524445addb04b84856efd9ea17f8472
+msgid "**void setBitmapInterpMode(BitmapInterpMode mode)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:535
+#: c34c21bdaa16484990e397cc49332baa
+msgid "**int roundRadius() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:539
+#: 0e1814b90917466b96413339312e54ff
+msgid "**void setRoundRadius(int value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:543
+#: b74eca1ef087413397396d8fcdb00d68
+msgid "**void setGlobal(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:547
+#: 57ab583a550f4906bc4e11a290f5d6cd
+msgid "**void setPinned(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:551
+#: 1ccda035a8df4b93af32fb113160eee5
+msgid "**void setFocused(bool value)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:555
+#: 6f7c8dd7bf2743e89a0858097483e063
+msgid "**Panel* parent() const**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:559
+#: 25d262ce5b304e56bd9c422e42fd8c4b
+msgid "**void setParent(Panel* uiobj)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:563
+#: c6d698290ad446e9a8f9f2b726363bb9
+msgid "**void addChild(Panel* uiobj)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:567
+#: 139a12f0d6084d94a9863ddd821259dd
+msgid "**void removeChild(Panel* uiobj)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:571
+#: af77c08b1bd44a4a8c0459d384ef1e8e
+msgid "**void pinChild(Panel* uiobj)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:575
+#: f82170d8711b4adba0e26ba640380ba0
+msgid "**void unpinChild(Panel* uiobj)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:579
+#: b78ed76d6d22429aa44b2760ce5b548c
+msgid "**void moveTopmost()**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:583
+#: 6564478630154b89b4891c38fbba37f0
+msgid "**void moveAbove(Panel* uiobj)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:587
+#: 9d92ddc61e9a46a4a0c370570b3bd5e3
+msgid "**void moveBelow(Panel* uiobj)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:591
+#: 4254b023fe59426485ef7788679eeb51
+msgid "**virtual void onUpdate()**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:597
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:632
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:667
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:702
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:737
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:772
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:807
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:842
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:877
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:912
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:947
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:982
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:1017
+#: 066888aeb118456b9c090ad97882dd06 1ff90a138f9a4c89a48863bef7ffcab4
+#: 3935d11b9a9049ae9e88b7cbd0dab9c7 578fb0c7dca04ddb9ace83c8e1d98c4e
+#: 5b347e2a9bb94678b18c92b7c9e0e85a 65067621491b4f03978c3d8ea9426b72
+#: 7b1c9ebc754b43a19123857f8ae94346 7ca743e1b8fe4ae9bac82978a68af56d
+#: b7749b5751c3451fa533916be10718b5 c70a5259b2b14a44a0de3596af0f5cd1
+#: d400043eff0e4ba295931bcde8460dd1 d4910285b4dc45e7a3fd70c9562875c1
+#: f21f0a91b4314c81b744b77bb2477a3a
+msgid "trigger"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:598
+#: 0643355dd8fe481fb0a7547b3c4fee57
+msgid "when processing the update stage in each frame"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:599
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:634
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:669
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:704
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:739
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:774
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:809
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:844
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:879
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:914
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:949
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:984
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:1019
+#: 048c90fba8ea4fbbaa771e6966bbc1d0 2fa2c52850db41a6b3ea5c7d07e5993e
+#: 5d7f49f1f6c145c0a0a548debe95e699 8a004a972e404e6698426d2e28d396a3
+#: 8bdbc8458df04f12a0fb0c996b657fe3 9adefd35f0ab4f89a8b9af7e72f4b165
+#: ac6f7055797a4634ba57d82e8da4a65b bb309a902f6c43728f379af9e39bb5ae
+#: d380174592e0448b8721a590970ac008 df34ef70337a400ab37a8833b1b509a4
+#: e175b1a985ff417cbfec78d8b4c9f7a3 e99cef7019514e6a829cd6a7b1865683
+#: ef826aac17c94b6b84d68b4892b585e1
+msgid "functor"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:604
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:639
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:674
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:709
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:744
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:779
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:814
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:849
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:884
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:919
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:954
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:989
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:1024
+#: 043242787d7644bdb47ae319eb29da7d 134e69500a8c48058374074643b127a7
+#: 28a28ca225da4d50bdddfe4d04f2cab1 4b188c39a07b417bb38f4b26eda7d91b
+#: 58cfb12462444510ad7adb91e1895d81 8269c92c25084f1cb4f7e54c883a1db2
+#: ad935838ca64462296179b30f9209f63 bbbee38862c74029a2faa64d1002b720
+#: bffc68cef75348f595279d265e18761c dac6362ce8bd4e1f8115d2e3667c20f3
+#: e73434bca13c4db2b54bdc4cb33d676f f0df6cfd4d2343cb9852a6c71cea44a4
+#: f25b9311128e46eeae5c21b18d0305c7
+msgid "lambda templates"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:605
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:640
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:675
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:710
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:745
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:780
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:815
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:850
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:885
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:920
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:955
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:990
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:1025
+#: 09e80fde87594f2c80ef07435fa8c258 0f9b92b0e6b74b95855127af5c6da3fc
+#: 646876b1cede4b8db4f4fa419cbfaaad 6a707c05fbda42739fc8c75672dce806
+#: 878576b7b3b040d5928ccc96a275f8a2 988a1a0af11a479eabf42a5a3805b389
+#: 9cc11a968b5143b9aeba73ee7a35f0d3 9e114fefa28340c895449f34bec24e90
+#: c2a398632cde4a49a6ee165db9775469 c4871d4dfbf54afa9b5ba2e5a97c3e5f
+#: c8efb80a8ee74d368f1715c5ee879920 d8f709fe9d5449f3baeb11a1b5e8c76a
+#: e6d6e2962d224debbac781e5407cef1c
+msgid "general:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:615
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:650
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:685
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:720
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:755
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:790
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:825
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:860
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:895
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:930
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:965
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:1000
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:1035
+#: 3771903c7a22497a8fabe2c5c63d85b6 6bc3246e126c446e84dacd55c671b21f
+#: 7793efd131704f08a0d047d074d8c867 7ba43cc667ed476da245f31b32e7dab1
+#: 7f3d897d5aed499298e4bc01ed2efdb6 86dbe7fc3f1f404ebd35e5a1b94542c1
+#: 99b192e541f742ea82cee92b062ee022 af0412aa8cf9464ebe63aa72b7a582dd
+#: b4eae37696424f70810b9a26cf3a6def bfad674af0e948abbaf1465cfa955fa6
+#: c59c0cf2376842248777c393157b37cb cb516cdb2ec245849083021c1f522864
+#: d799ec6974f2487f98a7fd2dee6100a1
+msgid "with Callback.h:"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:626
+#: 4bc043b0fe9743768f21afa3eadcb5da
+msgid "**virtual void onSize(SizeEvent* event)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:633
+#: f8fde33af68645a19cbd0c1cda63b32e
+msgid "when the size of the panel changes"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:661
+#: 7cb0ff78b34e41d8992f93674b4f38d2
+msgid "**virtual void onMove(MoveEvent* event)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:668
+#: cc2767f79b4842ecb8bb577e54be2091
+msgid "when the position of the panel changes"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:696
+#: f9fd0ec14630433fb1063ba7ac0841e6
+msgid "**virtual void onChangeTheme(const std::wstring& name)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:703
+#: d9f2107425594336aa43707f1739d386
+msgid "when the theme of the application changes"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:731
+#: e59f27d3bc74477385750d007ee40944
+msgid "**virtual void onChangeLangLocale(const std::wstring& name)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:738
+#: b54b1dd8efe54c07afff15f85cd7e28f
+msgid "when the language-locale of the application changes"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:766
+#: 00c2abee46af48b3912155caa12e1ccd
+msgid "**virtual void onGetFocus()**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:773
+#: ef55c47befd64d68b05a11d9bac0ef6a
+msgid "when the panel gets focus"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:801
+#: 0bf509f8b72341358091ab23031ddd77
+msgid "**virtual void onLoseFocus()**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:808
+#: a5b0404b65bd4192b951c859fc424f60
+msgid "when the panel loses focus"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:836
+#: 0145a0f4c534495cb0ecafa110fd7f74
+msgid "**virtual void onMouseEnter(MouseMoveEvent* event)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:843
+#: 43db893cc9254c11a6a324e8fd006dc9
+msgid "when the mouse cursor enters the panel"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:871
+#: 4690bc475d384f18b00cedf57d35dc22
+msgid "**virtual void onMouseMove(MouseMoveEvent* event)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:878
+#: 76f857f7c5fc4f6eb67bad78d934b632
+msgid "when the mouse cursor moves in the panel"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:906
+#: c721af0321444304bf06a85177454f26
+msgid "**virtual void onMouseLeave(MouseMoveEvent* event)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:913
+#: 761c2749e72f48d990dc7b090d802862
+msgid "when the mouse cursor leaves the panel"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:941
+#: f74a90e48c55402b978b9dcf866f9897
+msgid "**virtual void onMouseButton(MouseButtonEvent* event)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:948
+#: 1c95afdf5f8a442bb9df58c03e0ceb02
+msgid "when any mouse button is used in the panel"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:976
+#: b3b7440f9ae14de9b5503fb4695a60b2
+msgid "**virtual void onMouseWheel(MouseWheelEvent* event)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:983
+#: ebf7e488e7784b22bf609cea5d8eb933
+msgid "when the mouse wheel is used in the panel"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:1011
+#: d872dbfef1534d9fa1a40e73a8790eae
+msgid "**virtual void onKeyboard(KeyboardEvent* event)**"
+msgstr ""
+
+#: ../../root/user_man/cpp/ui_objects/basic_panels/panel.rst:1018
+#: 670f0660f20d41a1aaff12b0f93ddb18
+msgid "when the keyboard is used in the panel"
+msgstr ""
+

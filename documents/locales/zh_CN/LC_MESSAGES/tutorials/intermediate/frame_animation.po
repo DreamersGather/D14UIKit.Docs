@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, yiyaowen
+# This file is distributed under the same license as the D14UIKit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: D14UIKit alpha && beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-14 16:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:4
+#: cf28511fbde54049a590a3e2877b398c
+msgid "Frame Animation"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:10
+#: 9dcf0c60a6da4c9c86d54e8d129d0e57
+msgid "The source code of the demo can be found in **d14uikit/demo**."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:13
+#: ad39bf1f37c144a2b76806a89103e5bd
+msgid "Do Something Fun"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:15
+#: baab8095ac26471d9beff805d257f9f2
+msgid ""
+"In the previous section, we introduced OOP-Style GUI building. Let's take"
+" a little break, and in this section, we'll do something interesting: "
+"implement a pixel-style frame animation \"Running Sticky Boy\"."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:18
+#: b45659787482440f89888eb454707039
+msgid "Simple Practice"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:20
+#: 5ab1855d265b49eb8eb75a42bd2a8efb
+msgid ""
+"First, we set an appropriate size for the window. For example, if the "
+"frame image is scaled to display at 256x256 dip, the window size can be "
+"set to around 300 dip:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:24
+#: ../../root/tutorials/intermediate/frame_animation.rst:40
+#: ../../root/tutorials/intermediate/frame_animation.rst:66
+#: ../../root/tutorials/intermediate/frame_animation.rst:88
+#: ../../root/tutorials/intermediate/frame_animation.rst:140
+#: ../../root/tutorials/intermediate/frame_animation.rst:158
+#: ../../root/tutorials/intermediate/frame_animation.rst:181
+#: 02a081a7aaf9490b946b568b421a0973 073dccde5fc247589673511f09e24b93
+#: 0f95423d1bb74543bf1caccad107c84e 695e18cfbfcc4631aa61c5542e43f3ed
+#: 7841f0c690634e0bafb870e23151e4f5 957ea89c9cc24fd7b6b3b601bc973685
+#: c85e6b90f4e649069edc69769ac120ad
+msgid "C++"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:30
+#: ../../root/tutorials/intermediate/frame_animation.rst:51
+#: ../../root/tutorials/intermediate/frame_animation.rst:75
+#: ../../root/tutorials/intermediate/frame_animation.rst:103
+#: ../../root/tutorials/intermediate/frame_animation.rst:147
+#: ../../root/tutorials/intermediate/frame_animation.rst:164
+#: ../../root/tutorials/intermediate/frame_animation.rst:200
+#: 092b1f0b5e854e0ca295b08a98fc287f 1a2e7d2f591048bbbc25f3d7f937720d
+#: 6b13ff163a8742d2a191c42cada4d168 6f8aab159103490c8b8f528000d623ee
+#: 9e2c42608e734fe7b929557a4341a6ce bb3606c549f5433f99c15d0e75fa96b8
+#: fcf5d8ea061c4606a892c5dc04c54157
+msgid "Python"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:36
+#: 58439c5c0fbf401aafe61c95edf714ee
+msgid "Next, let's do some basic setup:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:62
+#: 1533ed8e8247494bb7eaf169d0c135dc
+msgid ""
+"As mentioned in the previous section, any UI object inherits from "
+"``Panel``. D14UIKit provides a ``FrameAnimPanel`` for easily implementing"
+" frame animations. It represents a rectangular area on the screen where "
+"you can specify a series of frame images to display in a designated "
+"manner. We first create the ``FrameAnimPanel`` as follows:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:84
+#: 2d1e2fe8bb154ac89bc3f4a296a4e69e
+msgid ""
+"Next comes the main task: preparing all the frame images. Using C++ might"
+" be a bit cumbersome, but using Python's list comprehension is much more "
+"concise:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:109
+#: 8d7794f309cd4b5ba15749c4630f5108
+msgid ""
+"The C++ API of D14UIKit only accepts parameters in the form of "
+"``Object*``, which means that D14UIKit objects do not manage memory for "
+"you. Instead, they merely reference the objects as needed. Therefore, we "
+"create all ``Image`` objects on the heap and then pass the raw pointers."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:113
+#: dbd31a73781441868df920be9c50f7d1
+msgid "Here is an important question:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:115
+#: c4af707b94e5463f9d7c92d597868756
+msgid ""
+"Suppose the ``Image`` objects passed to ``setFrames`` are **cleaned up**."
+" Wouldn't the application **crash** when the ``FrameAnimPanel`` "
+"**references** the related ``Image`` objects?"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:117
+#: a58eae22a20b436a9cea3b78e2704267
+msgid ""
+"**Actually, it WON'T**, because D14UIKit still has a memory management "
+"mechanism for the so-called ``Private`` objects. For example, an "
+"``Image`` object corresponds to an internal ``ImagePrivate`` object, and "
+"the actual data is retained by the ``Private`` object. D14UIKit objects "
+"merely reference their corresponding ``Private`` objects. Therefore, if "
+"an ``Image`` object is cleaned up, you can no longer reference the actual"
+" ``Private`` object, but the application itself won't crash. This also "
+"decouples the development code from D14UIKit."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:119
+#: 27669cde638a41af86e7d79b4e129fa3
+msgid ""
+"For example, you can try the following C++ code, and the application will"
+" still run normally, even if the ``std::vector<Image>`` on the stack has "
+"been cleaned up:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:136
+#: 53159a561fdc45739e23838b1a8bde42
+msgid ""
+"Next, set the frame interval and image scaling strategy. Since the "
+"original frames are pixel art, use Point-Sampler (a.k.a NearestNeighbor-"
+"Sampler) to maintain pixel clarity:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:154
+#: 2f5fa352e0ab41f891247b0903ce24f2
+msgid ""
+"Then, set up the animation to start playing, and D14UIKit will render the"
+" frame animation at full speed:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:172
+#: e1ca85d0859f4cb4b9c82fcc5328fbf0
+msgid "D14UIKit operates in two modes:"
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:174
+#: f80632e3af874cd8ad1866823fcda358
+msgid ""
+"**Passive Mode**: When the animation state is false, similar to common "
+"GUI applications, D14UIKit uses a message queue for response and "
+"rendering, resulting in lower CPU/GPU usage and minimal power "
+"consumption."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:175
+#: c508bb1ca33e4c30b0c683687f984ae0
+msgid ""
+"**Active Mode**: When the animation state is true, similar to real-time "
+"rendering games, D14UIKit continuously outputs refreshed frames through "
+"the high-speed graphics pipeline, enabling complex dynamic effects."
+msgstr ""
+
+#: ../../root/tutorials/intermediate/frame_animation.rst:177
+#: d1ff871f6b64410883c04348afe39332
+msgid ""
+"Finally, create a label to display the FPS and set up the relevant "
+"callback function:"
+msgstr ""
+

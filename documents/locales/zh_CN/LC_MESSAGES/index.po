@@ -22,6 +22,7 @@ msgstr ""
 #: ../../root/index.rst:104
 msgid "Getting Started"
 msgstr "快速上手"
+"快速上手"
 
 #: ../../root/index.rst:110
 msgid "User's Manual"
@@ -52,6 +53,7 @@ msgid ""
 "controls built in the library, it is easy for developers to build "
 "exciting GUI applications on modern Windows platform."
 msgstr ""
+"测试测试"
 
 #: ../../root/index.rst:12 e332d30e5a754c888dad45edf89126f9
 msgid ""

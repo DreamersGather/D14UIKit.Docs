@@ -28,7 +28,5 @@ html_favicon = 'https://media.githubusercontent.com/media/DreamersGather/D14Proj
 # -- Options for internationalisation ----------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-internationalisation
 
-locale_dirs = ['../locale/']
-
-gettext_uuid = True
-gettext_compact = False
+# gettext_uuid = True
+# gettext_compact = False

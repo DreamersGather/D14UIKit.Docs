@@ -11,4 +11,8 @@ Quick Tutorials
    intermediate/basic_callback
    intermediate/frame_animation
    intermediate/modern_theme
+   advanced/async_message
+   advanced/async_polling
    advanced/advanced_callback
+   directx_cpp/scene_template
+   directx_cpp/simple_triangle

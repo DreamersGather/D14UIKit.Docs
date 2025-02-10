@@ -12,7 +12,7 @@ Frame Animation
 Do Something Fun
 ----------------
 
-In the previous section, we introduced OOP-Style GUI building. Let's take a little break, and in this section, we'll do something interesting: implement a pixel-style frame animation "Running Sticky Boy".
+In the previous sections, we introduced some basic concepts related to D14UIKit, and step-by-step built some simple GUI applications. Let's take a little break, and in this section, we'll do something interesting: implement a pixel-style frame animation "Running Sticky Boy".
 
 Simple Practice
 ---------------

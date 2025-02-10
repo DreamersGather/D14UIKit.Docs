@@ -33,7 +33,18 @@ If you are new to D14UIKit, we recommend you to read the following tutorials tha
 
 * Advanced
 
+  * :ref:`d14uikit-tutorials-advanced-async_message`
+  * :ref:`d14uikit-tutorials-advanced-async_polling`
   * :ref:`d14uikit-tutorials-advanced-advanced_callback`
+
+* Working with DirectX
+
+  * :ref:`d14uikit-tutorials-directx_cpp-scene_template`
+  * :ref:`d14uikit-tutorials-directx_cpp-simple_triangle`
+
+.. note::
+
+   D14UIKit supports DirectX development for C++ users only and does not currently provide Python interfaces.
 
 For the developers who want to learn more details of D14UIKit, here are the complete API references:
 

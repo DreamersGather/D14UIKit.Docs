@@ -1,5 +1,5 @@
-Build with VS
-=============
+Building
+========
 
 Prerequisites
 -------------
@@ -41,7 +41,7 @@ We use `Git Large File Storage`_ system to help manage the binaries (like png fi
 
 Everything is ready and we can start building D14UIKit. The project structure is as follows:
 
-* **Bin**
+* **Bin** (Resource Files)
 
   * **Images**
   * **Shaders**
@@ -55,6 +55,9 @@ Everything is ready and we can start building D14UIKit. The project structure is
   * **.h/.cpp** (Implementation)
 
 * **Inc** (External Headers)
+* **Int** (Build Intermediate Files)
+* **Lib** (External Libraries)
+* **Out** (Build Output Files)
 * **Src** (Migrated from D14Engine)
 
   * **Common**
@@ -66,9 +69,9 @@ Everything is ready and we can start building D14UIKit. The project structure is
 
   * **PyBind** (Copy D14UIKit.pyd here)
 
-    * **TestMain.py** (Used for testing Python wrapper)
+    * **scripts** (Demos for testing Python wrapper)
 
-  * **TestMain.cpp** (Used for testing C++ wrapper)
+  * **sources** (Demos for testing C++ wrapper)
 
 * **pack.ps1** (Used for packing wrappers to **Dist**)
 * **Miscellaneous**
@@ -97,8 +100,8 @@ Build C++ Wrapper
 -----------------
 
 1. Select **D14UIKit** as the startup project.
-2. Select one configuration from **Debug/Rebug/Release | (x64)**.
-3. Build or run the project.
+2. Select one configuration from **(Debug/Rebug/Release) | (Win32/x64/x86)**.
+3. Build the project, and the library files will be generated in **Out**.
 
 .. important::
 
@@ -133,8 +136,8 @@ Build Python Wrapper
 --------------------
 
 1. Select **D14UIKit** as the startup project.
-2. Select one configuration from **DPyBind/RPyBind | (x64)**.
-3. Build or run the project.
+2. Select one configuration from **(DPyBind/RPyBind) | (Win32/x64/x86)**.
+3. Build the project, and the library files will be generated in **Out**.
 
 .. note::
 
@@ -149,8 +152,8 @@ Test C++ Wrapper
 ----------------
 
 1. Select **TestCpp** as the startup project.
-2. Select one configuration from **Debug/Release | (x64)**.
-3. Design a test program, for example:
+2. Select one configuration from **(Debug/Release) | (Win32/x64/x86)**.
+3. Write a test program, for example:
 
    .. code-block:: c++
 
@@ -171,8 +174,8 @@ Test C++ Wrapper
 Test Python Wrapper
 -------------------
 1. Select **TestPyBind** as the startup project.
-2. Select one configuration from **Debug/Release | (Any CPU)**.
-3. Design a test script, for example:
+2. Select one configuration from **(Debug/Release) | (Any CPU)**.
+3. Write a test script, for example:
 
    .. code-block:: python
 

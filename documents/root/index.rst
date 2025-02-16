@@ -117,6 +117,7 @@ On the one hand, these characteristics of UIKit make it difficult to get started
    :hidden:
 
    tutorials/index
+   tutorials/gallery
 
 .. toctree::
    :caption: User's Manual
@@ -129,4 +130,6 @@ On the one hand, these characteristics of UIKit make it difficult to get started
    :caption: Developer Guides
    :hidden:
 
-   dev_guide/build
+   dev_guide/building
+   dev_guide/architecture
+   dev_guide/contributing
